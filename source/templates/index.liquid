@@ -1,0 +1,29 @@
+{% extends layout %} 
+{% block content %}
+{% include 'header' %}
+<!-- ***************************************************************** -->
+<!-- HTML CONTENT-->
+<!-- ***************************************************************** -->
+
+
+
+<div>Example description</div>
+
+
+
+{% include 'happyClients' %}
+{% assign bgHappy = "red" %}
+
+
+{% include 'happyClients' %}
+{% assign bgHappy = "green" %}
+
+
+
+
+<br>
+<br>
+
+
+{% include 'footer' %}
+{% endblock %}
