@@ -4,6 +4,7 @@
 <!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
 <!--[if IE 9]><html class="no-js ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,13 +19,15 @@
     <![endif]-->
   </head>
 
+
   <body>
-    <div class="wrapper">
-		  {% block content %}
-      {% endblock %}
 
-    </div>
+  <div class="wrapper">
+    {% block content %}
+    {% endblock %}
 
+  </div>
+  
     <script src="/js/script.min.js"></script>
   </body>
 </html>
