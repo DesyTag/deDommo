@@ -1,0 +1,29 @@
+{% extends layout %}
+
+{% block content %}
+{%assign section = "blogList"%}
+
+
+	{% include 'header' %}
+
+	{% include 'navigation' %}
+
+	<!-- create cycle for post object and include post.li -->
+
+	<div class="container">
+
+		{% for item in data[section].posts %}
+			{% include 'news' %}
+		{% endfor %}
+
+
+
+
+
+
+
+	</div>
+	{% include 'footer' %}
+
+
+{% endblock %}

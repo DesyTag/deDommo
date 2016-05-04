@@ -67,9 +67,11 @@ html, body
 	height: 100%
 	font-family: 'Open Sans',sans-serif
 
+$background: #f3f3f3
 $violet: #a65980
 $dark_violet: #8b4a6b
 $azure: #37b1de
+$grey: #ececec
 $txt_gray: #777777
 $bold_gray: #7f8c8c
 
@@ -88,3 +90,136 @@ $bold_gray: #7f8c8c
 .responsiveImg
 	display: block
 	width: 100%
+.slider
+	position: relative
+
+.slider__container
+	position: relative
+	max-height: 500px
+	overflow: hidden
+
+.slider__txt
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	color: #fff
+	text-align: center
+
+.slider__title
+	line-height: 60px
+
+.slider__titleTxt
+	background-color: $azure
+	font-size: 50px
+	font-weight: 900
+	text-transform: uppercase
+	display: inline-block
+	padding: 4px
+	border-radius: 8px
+
+.slider__subtitle
+	background-color: #3f4646
+	width: 80%
+	margin: 0 auto
+	padding: 14px
+	border-radius: 8px
+
+
+.slider__subtitleTxt
+	font-size: 16px
+	line-height: 20px
+
+.arrow
+	z-index: 3
+	background-color: $azure
+	position: absolute
+	font-size: 40px
+	padding: 5px 8px
+
+	&.next
+		top: 50%
+		left: 0
+		transform: translate(0%, -50%)
+	&.previus
+		top: 50%
+		right: 0
+		transform: translate(0%, -50%)
+.arrows
+	display: inline-block
+
+.section
+	padding-top: 30px
+	position: relative
+	background-color: $background
+
+.sectionGrey
+	background-color: $grey
+	padding: 20px
+
+.sectionGrey__txt
+	display: inline-block
+
+.sectionGrey__title
+	color: $bold_gray
+	font-size: 30px
+	font-weight: 600
+
+.sectionGrey__subtitle
+	color: $txt_gray
+	font-size: 13px
+	line-height: 45px
+	font-weight: 300
+
+.sectionGrey__button
+	background-color: $azure
+	display: inline-block
+	float: right
+	font-size: 20px
+	text-transform: uppercase
+	text-align: center
+	border-radius: 7px
+	box-shadow: 0px 4px 0px #20a8da
+.button 
+	padding: 15px 40px
+
+.widgets
+	padding-top: 50px
+
+.widget__total
+	// display: inline-block
+	// float: left
+
+.widget__singlePart
+	background-color: #fff
+	width: 20%
+
+.widget__container
+	padding: 30px
+	text-align: center
+.widget__icon
+	font-size: 56px
+.like
+	color: $azure
+
+.widget__txtBold
+	color: $bold_gray
+	font-size: 18px
+	font-weight: bold
+	line-height: 30px
+	text-transform: uppercase
+	margin-bottom: 17px
+
+.widget__txt
+	color: $txt_gray
+	font-size: 14px
+	font-weight: 300
+	line-height: 20px
+
+
+
+
+
+
+
+

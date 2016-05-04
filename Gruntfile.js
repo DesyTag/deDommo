@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+		json : grunt.file.readJSON('source/js/variable.json'),
         sass: {
             dev: {
                 options: {
@@ -40,7 +41,8 @@ module.exports = function(grunt) {
         },
         liquid: {
             options: {
-                includes: '<%=pkg.directories.includes%>'
+                includes: '<%=pkg.directories.includes%>',
+				data :'<%=json%>'
             },
             pages: {
                 files: [
@@ -83,5 +85,5 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
     /* Register Task(s) */
     grunt.registerTask('default', ['liquid', 'sass', 'import','uglify']);
-    
+
 }

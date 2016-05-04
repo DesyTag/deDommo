@@ -1,34 +1,13 @@
 {% extends layout %}
 
 {% block content %}
-
-
+{%assign section = "contact"%}
 
 	{% include 'header' %}
 
+	{% include 'navigation' %}
 
-	<div class="breadcrumb clearfix">
-			<div class="container">
-				<div class="breadcrumb__left">
-					<p  class="breadcrumb__title">
-						CONTACT US
-					</p>
-				</div>
-				<div class="breadcrumb__right">
-					<ul class="breadcrumb__list">
-						<li class="breadcrumb__item">
-							Home
-						</li>
-						<li  class="breadcrumb__item">
-							/
-						</li>
-						<li  class="breadcrumb__item">
-							contact
-						</li>
-					</ul>
-			</div>
-		</div>
-	</div>
+
 	<div class="container">
 
 		<div class="map">
@@ -85,25 +64,11 @@
 						</p>
 					</li>
 				</ul>
-
 			</div>
-
-
 		</div>
-
-
 	</div>
 
 
 	{% include 'footer' %}
-
-
-
-
-
-
-
-
-
 
 {% endblock %}

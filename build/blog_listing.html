@@ -27,9 +27,9 @@
 
   <div class="wrapper">
     
-<!-- ***************************************************************** -->
-<!-- HTML CONTENT-->
-<!-- ***************************************************************** -->
+
+
+
 	<header class="header">
 	<div class="container">
 		<div class="header__container clearfix">
@@ -108,146 +108,164 @@
 	</div>
 </header>
 
-		<div class="slider">
-			<a class="arrow next" href="#">
-				<span class="arrows right">
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</span>
-			</a>
-			<div class="slider__container">
-				<div class="slider__item">
-					<div class="slider__img">
-						<img class="responsiveImg" src="img/slideHome.jpg" alt="image-slider">
-					</div>
-					<div class="slider__txt">
-						<h2 class="slider__title"> 
-							<span class="slider__titleTxt">
-								vestibulum
-							</span>	
-						</h2>
-						<p class="slider__subtitle" >
-							<span class="slider__subtitleTxt">
-								Maecenas emplate is a template for agency or freelancer or corporate Lorem ipsum aperiam!
-							</span>
-						</p>
-					</div>
-				</div>
+
+	<nav class="navigation clearfix">
+		<div class="container">
+			<div class="navigation__left">
+				<p  class="navigation__title">
+				BLOG
+				</p>
 			</div>
-			<a class="arrow previus" href="#">
-				<span class="arrows left">
-					<i class="fa fa-angle-double-right" aria-hidden="true"></i>
-				</span>
-			</a>
-			<!-- 	mancano le line che indicano lo spostamento delle slider -->	
+			<div class="navigation__right">
+				<ul class="breadcrumb__list">
+					<li class="breadcrumb__item">
+						Home
+					</li>
+					<li  class="breadcrumb__item">
+						/
+					</li>
+					<li  class="breadcrumb__item">
+						Blog
+					</li>
+				</ul>
 		</div>
-		<div class="container section">
-			<div class="sectionGrey clearfix">
-				<div class="sectionGrey__txt">
-					<h3 class="sectionGrey__title">
-						Some of our top services
-					</h3>
-					<p class="sectionGrey__subtitle">
-						Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. 
-					</p>
-				</div>
-				<div class="sectionGrey__button">
-					<a class="button" href="#">
-						view more
-					</a>
-				</div>
-			</div>
+	</div>
+</nav>
 
-			<div class="widgets clearfix">
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-thumbs-o-up like" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								suspendisse
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
 
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-thumbs-o-up like" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								suspendisse
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
+	<!-- create cycle for post object and include post.li -->
 
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-thumbs-o-up like" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								suspendisse
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
+	<div class="container">
 
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-thumbs-o-up like" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								suspendisse
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
-			</div>
+		
+			<section class="article">
+	<div class="article__conteiner">
+		<div class="article__info">
+			<span class="article__date">19 feb</span>
+			<span class="article__type">
+				<i class="article__icon fa fa-file-text" aria-hidden="true"></i>
+			</span>
 		</div>
+		<div class="article__boximage">
+			<img class="article__img" src="/img/blog_img.jpg" alt="" />
+			<h2 class="article__title">Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h2>
+			<ul class="article__list">
+				<li class="article__item">Posted by <span class="violet">Admin</span> in Phtography</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-tags" aria-hidden="true"></i></span>Design, Template
+				</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-comment" aria-hidden="true"></i></span>22
+				</li>
+			</ul>
+			<p class="article__text">
+				Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			</p>
+			<a class="article__continue"href="#">Continue reading <i class="fa fa-arrow-right" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+</section>
+
+		
+			<section class="article">
+	<div class="article__conteiner">
+		<div class="article__info">
+			<span class="article__date">20 feb</span>
+			<span class="article__type">
+				<i class="article__icon fa fa-file-text" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="article__boximage">
+			<img class="article__img" src="/img/blog_img.jpg" alt="" />
+			<h2 class="article__title">Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h2>
+			<ul class="article__list">
+				<li class="article__item">Posted by <span class="violet">Admin</span> in Phtography</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-tags" aria-hidden="true"></i></span>Design, Template
+				</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-comment" aria-hidden="true"></i></span>22
+				</li>
+			</ul>
+			<p class="article__text">
+				Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			</p>
+			<a class="article__continue"href="#">Continue reading <i class="fa fa-arrow-right" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+</section>
+
+		
+			<section class="article">
+	<div class="article__conteiner">
+		<div class="article__info">
+			<span class="article__date">21 feb</span>
+			<span class="article__type">
+				<i class="article__icon fa fa-file-text" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="article__boximage">
+			<img class="article__img" src="/img/blog_img.jpg" alt="" />
+			<h2 class="article__title">Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h2>
+			<ul class="article__list">
+				<li class="article__item">Posted by <span class="violet">Admin</span> in Phtography</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-tags" aria-hidden="true"></i></span>Design, Template
+				</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-comment" aria-hidden="true"></i></span>22
+				</li>
+			</ul>
+			<p class="article__text">
+				Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			</p>
+			<a class="article__continue"href="#">Continue reading <i class="fa fa-arrow-right" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+</section>
+
+		
+			<section class="article">
+	<div class="article__conteiner">
+		<div class="article__info">
+			<span class="article__date">22 feb</span>
+			<span class="article__type">
+				<i class="article__icon fa fa-file-text" aria-hidden="true"></i>
+			</span>
+		</div>
+		<div class="article__boximage">
+			<img class="article__img" src="/img/blog_img.jpg" alt="" />
+			<h2 class="article__title">Duis dapibus aliquam mi, eget euismod sem scelerisque ut.</h2>
+			<ul class="article__list">
+				<li class="article__item">Posted by <span class="violet">Admin</span> in Phtography</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-tags" aria-hidden="true"></i></span>Design, Template
+				</li>
+				<li class="article__item violet">
+					<span class="light_blue"><i class="fa fa-comment" aria-hidden="true"></i></span>22
+				</li>
+			</ul>
+			<p class="article__text">
+				Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+			</p>
+			<a class="article__continue"href="#">Continue reading <i class="fa fa-arrow-right" aria-hidden="true"></i>
+			</a>
+		</div>
+	</div>
+</section>
+
+		
 
 
 
 
 
+
+
+	</div>
 	<footer class="footer">
 	<div class="container">
 		<div class="footer__content">
@@ -362,6 +380,8 @@
 		</div>
 	</div>
 </div>
+
+
 
 
   </div>
