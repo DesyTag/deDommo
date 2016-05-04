@@ -2,8 +2,10 @@
 	background-color: $violet
 	background-image: url('/img/path.png')
 	background-position: top center
-	padding: 54px 0
+	padding: 54px 0 20px
 	background-repeat: no-repeat
+	@media screen and (min-width: 1024px)
+		padding: 54px 0
 
 .footer__content
 	width: 100%
@@ -11,12 +13,20 @@
 	color: white
 
 .footer__list
-	padding: 24px 20px 0
+	padding: 0px 20px
+	@media screen and (min-width: 650px)
+		padding: 20px 20px 0
+	@media screen and (min-width: 1024px)
+		padding: 24px 20px 0
 
 .footer__contact
-	width: 35%
-	display: inline-block
-	vertical-align: top
+	width: 100%
+	@media screen and (min-width: 1024px)
+		width: 35%
+		display: inline-block
+		vertical-align: top
+
+	// @media screen and (min-width: 1024px)
 
 .footer__brand
 	color: white
@@ -33,8 +43,11 @@
 .footer__text
 	font-size: 13px
 	text-align: left
-	margin: 34px 0
+	margin: 24px 0
 	line-height: 21px
+	@media screen and (min-width: 1024px)
+		margin: 34px 0
+
 
 .footer__address
 	font-size: 13px
@@ -48,10 +61,18 @@
 	margin-top: 21px
 
 .footer__link
-	width: 15%
-	display: inline-block
-	vertical-align: top
-	padding: 0 10px
+	width: 100%
+	padding: 10px 0px
+
+	@media screen and (min-width: 650px)
+		width: 45%
+		margin-top: 23px
+		display: inline-block
+		vertical-align: top
+		padding: 0 10px
+	@media screen and (min-width: 1024px)
+		width: 15%
+		margin-top: 0px
 
 .footer__title
 	font-size: 20px
@@ -76,6 +97,9 @@
 
 .footer__blog
 	@extend .footer__contact
+	margin-top: 34px
+	@media screen and (min-width: 1024px)
+		margin-top: 0px
 
 .footer__blogitem
 	width: 100%
@@ -108,14 +132,23 @@
 	display: block
 
 .footer__left
-	float: left
+	text-align: center
 	color: white
+	@media screen and (min-width: 650px)
+		float: left
 
 .footer__right
-	float: right
+	text-align: center
+	margin-top: 17px
+	@media screen and (min-width: 650px)
+		float: right
+		margin-top: 0
 
 .footer__socialitem
 	color: white
 	font-size: 21px
 	margin-left: 26px
 	display: inline-block
+
+	&:first-child
+		margin-left: 0px
