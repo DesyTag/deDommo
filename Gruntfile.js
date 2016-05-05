@@ -76,7 +76,8 @@ module.exports = function(grunt) {
                 tasks: ['uglify']
             },
             liquid: {
-                files: ['<%=pkg.directories.templates%>/*.liquid', '<%=pkg.directories.templates%>/includes/*.liquid','<%=pkg.directories.templates%>/**/*.liquid'],
+                files: ['<%=pkg.directories.templates%>/*.liquid', '<%=pkg.directories.templates%>/includes/*.liquid','<%=pkg.directories.templates%>/**/*.liquid',
+				'source/js/variable.json'],
                 tasks: ['liquid']
             }
         }

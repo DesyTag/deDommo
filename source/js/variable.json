@@ -9,24 +9,41 @@
 		"posts":[
 		{
 			"data":"19 May",
-			"title": "Duis dapibus aliquam mi, eget euismod",
-			"tag": "Design, Template"
+			"title": "Pucci pucci dapibus aliquam mi, eget euismod",
+			"icon" :"<i class='article__icon fa fa-file-text' aria-hidden='true'></i>",
+			"img" : "/img/blog_img.jpg",
+			"tag": "Design, Template",
+			"text" :"Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senecus et netus et malesuada fames ac turpis egestas.",
+			"more" : "Continue reading <i class='fa fa-arrow-right' aria-hidden='true'></i>"
 
 		},
 		{
 			"data":"20 May",
-			"title": "Duis dapibus aliquam mi, eget euismod",
-			"tag": "Photo"
+			"title": "Dui dapibus aliquam mi",
+			"icon" :"<i class='fa fa-video-camera' aria-hidden='true'></i>",
+			"img" : "/img/blog_video.jpg",
+			"tag": "Photo",
+			"text" :"Maecenas eget turpis turpis. Nunc vel metus augue. Aenean euismod cursus ligula eget dapibus. Praesent vel erat in tortor placerat dignissim.",
+			"more" : "Continue reading <i class='fa fa-arrow-right' aria-hidden='true'></i>"
 		},
 		{
 			"data":"21 May",
 			"title": "Duis dapibus aliquam mi, eget euismod sem scelerisque ut.",
-			"tag": "Nature"
+			"img" : "/img/blog_img.jpg",
+			"icon" :"<i class='fa fa-text-height' aria-hidden='true'></i>",
+			"tag": "Nature",
+			"text" :"",
+			"more" : ""
+
 		},
 		{
 			"data":"22 May",
 			"title": "Duis dapibus aliquam mi, eget euismod",
-			"tag": "Video"
+			"img" : "/img/blog_video.jpg",
+			"icon" :"<i class='fa fa-heart' aria-hidden='true'></i>",
+			"tag": "Video",
+			"text" :"",
+			"more" : ""
 		}
 		]
 	}

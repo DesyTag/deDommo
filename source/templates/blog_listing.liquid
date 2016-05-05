@@ -11,10 +11,113 @@
 	<!-- create cycle for post object and include post.li -->
 
 	<div class="container">
+		<div class="blog__left">
+			{% for item in data[section].posts %}
+				{% include 'news' %}
+			{% endfor %}
+		</div>
 
-		{% for item in data[section].posts %}
-			{% include 'news' %}
-		{% endfor %}
+
+		<div class="blog__right">
+			<aside class="categories">
+				<h2 class="categories__title">categories</h2>
+				<ul class="categories__list">
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>logo desing
+					</li>
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>web design
+					</li>
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>photography
+					</li>
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>wordpress
+					</li>
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>icon
+					</li>
+				</ul>
+			</aside>
+
+			<aside class="recent">
+				<h2 class="recent__title">Recent post</h2>
+				<ul class="recent__list">
+					<li class="recent__item">
+						<span class="recent__arrow"><i class="fa fa-angle-right" aria-hidden="true"></i>
+						</span>curabitur vitae velit
+					</li>
+					<li class="recent__item">
+						<span class="recent__arrow"><i class="fa fa-angle-right" aria-hidden="true"></i>
+						</span>curabitur vitae velit
+					</li>
+					<li class="recent__item">
+						<span class="recent__arrow"><i class="fa fa-angle-right" aria-hidden="true"></i>
+						</span>curabitur vitae velit
+					</li>
+					<li class="recent__item">
+						<span class="recent__arrow"><i class="fa fa-angle-right" aria-hidden="true"></i>
+						</span>curabitur vitae velit
+					</li>
+				</ul>
+			</aside>
+
+			<aside class="tag">
+				<h2 class="tag__title">tag</h2>
+				<ul class="tag__list">
+					<li class="tag__item">
+						 nunc
+					</li>
+					<li class="tag__item">
+						praesnet
+					</li>
+					<li class="tag__item">
+						 nunc
+					</li>
+					<li class="tag__item">
+						praesent
+					</li>
+					<li class="tag__item">
+						 nunc
+					</li>
+					<li class="tag__item">
+						praesnet
+					</li>
+					<li class="tag__item">
+						 nunc
+					</li>
+					<li class="tag__item">
+						praesent
+					</li>
+				</ul>
+			</aside>
+
+			<aside class="archive">
+				<h2 class="archive__title">archivie</h2>
+				<ul class="categories__list">
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>2013
+					</li>
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>2014
+					</li>
+					<li class="categories__item">
+						<span class="categories__arrow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+						</span>2015
+					</li>
+				</ul>
+			</aside>
+
+		</div>
+
+
 
 
 

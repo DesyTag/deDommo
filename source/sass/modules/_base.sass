@@ -278,18 +278,22 @@ $bord_azure: #20a8da
 	width: 48%
 
 	&:nth-child(2n+1)
-		margin-left: 0
+		margin-left: 0%
 
 	&:first-child
-		margin-left: 0 
+		margin-left: 0%
 
 	@media screen and (min-width: 650px)
 		width: 48%
 
-		&:nth-child(2n+1)
-			margin-left: 0
 	@media screen and (min-width: 1024px)
 		width: 23%
+
+		
+		&:nth-child(2n+1)
+			margin-left: 2.5%
+		&:first-child 
+			margin-left: 0%
 
 .widget__singlePart
 	background-color: #fff
@@ -303,6 +307,7 @@ $bord_azure: #20a8da
 		margin: 18px
 	@media screen and (min-width: 1024px)
 		padding: 30px 20px 73px
+		margin: 0px
 
 .widget__icon
 	font-size: 33px
@@ -363,6 +368,9 @@ $bord_azure: #20a8da
 	@media screen and (min-width: 650px)
 		left: 25.5%
 		margin-top: -50px
+	@media screen and (min-width: 1024px)
+		margin: -10% 0%
+		left: 11.5%
 
 .sectionVisual__grey
 	background-image: url('/img/path.png')
@@ -411,16 +419,16 @@ $bord_azure: #20a8da
 
 .sectionVisual
 	position: relative
-	margin: -200px auto 0px
-	margin-bottom: 80px
+	margin: 0px auto 
+	margin-bottom: 0px
 	text-align: center
 
 	@media screen and (min-width: 650px)
 		margin: -130px auto 0px
 		margin-bottom: 80px
 	@media screen and (min-width: 1024px)
-		margin: 0px auto 
-		margin-bottom: 0px
+		margin: -200px auto 0px
+		margin-bottom: 80px
 
 
 .sectionVisual__item
@@ -477,10 +485,13 @@ $bord_azure: #20a8da
 	@media screen and (min-width: 1024px)
 		width: 20%
 		margin-left: 4%
+		&.sectionTxt
+			width: 20%
+			margin: auto
 		&:first-child
 			margin-left: 0%
-
-
+		
+		
 .sectionList__title
 	color: $bold_gray
 	font-size: 16px
@@ -537,7 +548,7 @@ $bord_azure: #20a8da
 	vertical-align: bottom
 
 	&:first-child
-		margin-left: 0 
+		margin-left: 0
 
 .sectionTxt__txt
 	line-height: 20px
@@ -609,8 +620,3 @@ $bord_azure: #20a8da
 		
 		&:first-child :nth-child(3n+1)
 			margin-left: 0%
-
-
-
-
-
