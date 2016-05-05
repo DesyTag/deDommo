@@ -1,0 +1,101 @@
+.blog__left
+	width: 100%
+	display: inline-block
+
+	@media screen and (min-width: 650px)
+		width: 70%
+
+	@media screen and (min-width: 1024px)
+		width: 75%
+
+.blog__right
+	display: none
+	@media screen and (min-width: 650px)
+		width: 29%
+		display: inline-block
+		vertical-align: top
+		padding: 0 0 0 7px
+
+	@media screen and (min-width: 1024px)
+		width: 23%
+		padding: 0 25px
+
+
+.categories__title
+	font-size: 16px
+	text-transform: uppercase
+	font-family: 800
+	color: $bold_gray
+
+.categories__list
+	padding: 0 20px
+
+.categories__item
+	font-size: 12px
+	text-transform: uppercase
+	color: $violet
+	padding-top: 20px
+	font-weight: 800
+	@media screen and (min-width: 650px)
+		font-size: 12px
+
+	@media screen and (min-width: 1024px)
+		font-size: 14px
+
+.categories__arrow
+	color: $azure
+	font-size: 15px
+	margin-right: 15px
+
+.recent
+	padding-top: 40px
+
+.recent__title
+	@extend .categories__title
+
+.recent__list
+	@extend .categories__list
+
+.recent__item
+	@extend .categories__item
+	font-size: 11px
+	@media screen and (min-width: 650px)
+		font-size: 11px
+
+	@media screen and (min-width: 1024px)
+		font-size: 13px
+
+.recent__arrow
+	color: $azure
+	font-size: 20px
+	margin-right: 15px
+	font-weight: 800
+
+.tag
+	@extend .recent
+
+.tag__title
+	@extend  .categories__title
+
+.tag__item
+	padding: 8px
+	margin-top: 20px
+	display: inline-block
+	background-color: $azure
+	color: white
+	border-radius: 8px
+	font-size: 13px
+	@media screen and (min-width: 650px)
+		font-size: 13px
+
+	@media screen and (min-width: 1024px)
+		font-size: 15px
+
+	&:hover
+		background-color: $violet
+
+.archive
+	@extend .recent
+
+.archive__title
+	@extend .categories__title

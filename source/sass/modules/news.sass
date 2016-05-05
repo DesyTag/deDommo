@@ -1,24 +1,41 @@
-.article__conteiner
-	width: 100%
+.article
 	border-bottom: 2px solid #827e7e
+	margin-bottom: 55px
+	display: inline-block
+	font-size: 0
 
 .article__info
-	width: 15%
+	width: 20%
 	display: inline-block
-	height: 220px
 	margin-right: 20px
 	vertical-align: top
+	@media screen and (min-width: 650px)
+		width: 13%
+
+	@media screen and (min-width: 1024px)
+		width: 16%
 
 .article__date
 	display: block
 	background-color: white
 	color: $bold_gray
-	padding: 20px
+	padding: 9px
 	box-shadow: 0px 8px 8px #dedede
 	text-align: center
-	margin-bottom: 30px
 	text-transform: uppercase
-	font-size: 30px
+	font-size: 16px
+	margin-bottom: 21px
+	line-height: 20px
+	border: 1px solid #efefef
+	@media screen and (min-width: 650px)
+		font-size: 19px
+
+	@media screen and (min-width: 1024px)
+		padding: 20px
+		margin-bottom: 30px
+		font-size: 30px
+		line-height: 33px
+
 
 .article__icon
 	font-size: 20px
@@ -29,18 +46,42 @@
 	background-color: $bold_gray
 	color: white
 	text-align: center
-	padding: 30px
+	padding: 18px
+	font-size: 18px
 
-.article__boximage
+	@media screen and (min-width: 650px)
+		padding: 20px
+		font-size: 20px
+	@media screen and (min-width: 1024px)
+		padding: 30px
+		font-size: 30px
+
+.article__box
 	display: inline-block
-	width: 80%
+	width: 70%
+	@media screen and (min-width: 650px)
+		width: 81%
+
+.article__img
+	display: block
+	width: 100%
+
 
 .article__title
 	color: $violet
-	font-size: 20px
+	font-size: 16px
 	font-weight: 500
 	letter-spacing: 2px
-	padding: 25px 0
+	padding: 21px 0
+	line-height: 20px
+	@media screen and (min-width: 650px)
+		font-size: 16px
+		padding: 21px 0
+
+	@media screen and (min-width: 1024px)
+		font-size: 20px
+		padding: 25px 0
+		line-height: 24px
 
 .light_blue
 	font-weight: 800
@@ -61,12 +102,19 @@
 	color: $violet
 
 .article__text
-	font-size: 16px
-	line-height: 23px
+	font-size: 13px
+	line-height: 21px
 	color: $txt_gray
-	padding: 30px 0
+	@media screen and (min-width: 650px)
+		font-size: 13px
+		line-height: 21px
+
+	@media screen and (min-width: 1024px)
+		font-size: 16px
+		line-height: 23px
 
 .article__continue
 	color: $violet
 	text-decoration: none
-	padding-bottom: 40px
+	padding: 20px 0 55px
+	font-size: 16px
