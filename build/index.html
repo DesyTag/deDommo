@@ -37,7 +37,11 @@
 				MODUS 
 				<span class="header__brandText"> versus</span>
 			</a>
-			<nav class="header__navbar" >
+			<div class="header__mobileIcon">
+				<a class="headerMobile__hamburger j-menuToggle" href="#"><i class="material-icons">menu</i></a>
+			</div>
+			
+			<nav class="header__navbar clearfix" >
 				<li class="header__item" >
 					<a class="header__menu active" href="#" title="menu-voice">
 						home
@@ -93,8 +97,8 @@
 						contacts
 					</a>
 				</li>
-				<li class="header__item" >
-					<a class="header__menu" href="#" title="menu-voice">
+				<li class="header__item searchItem" >
+					<a class="header__menu searchMenu" href="#" title="menu-voice">
 						<span class="header__link">
 							<i class="material-icons iconNav">search</i>
 						</span>
@@ -282,7 +286,7 @@
 				<p class="sectionList__title">
 					Why Choose Us?
 				</p>
-				<ul>
+				<ul class="sectionList__content">
 					<li class="sectionList__list">
 						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
 						<p class="sectionList__txt">
@@ -513,6 +517,8 @@
 
 
   </div>
+    <script src="https://code.jquery.com/jquery-1.12.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   
     <script src="/js/script.min.js"></script>
   </body>
