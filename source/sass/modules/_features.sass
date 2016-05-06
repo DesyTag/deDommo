@@ -1,5 +1,6 @@
 .slideshow
 	position: relative
+	padding-bottom: 60px
 
 .slideshow__img
 	width: 100%
@@ -7,7 +8,85 @@
 
 .slideshow__title
 	position: absolute
-	top: 50%
+	top: 75%
 	left: 50%
-	color: red
-	font-size: 30px
+	transform: translate(-50%, -50%)
+	color: $txt_gray
+	text-transform: uppercase
+	font-size: 24px
+	letter-spacing: 2px
+
+.slideshow__iconLeft
+	position: absolute
+	display: block
+	top: 40%
+	left: 0
+	background-color: $azure
+	color: white
+	font-size: 50px
+	padding: 10px
+
+.slideshow__iconright
+	right: 0
+	background-color: $azure
+	color: white
+	font-size: 50px
+	padding: 10px
+	position: absolute
+	display: block
+	top: 40%
+
+.slidepart
+	width: 100%
+	font-size: 0
+	padding-bottom: 60px
+
+.slidepart__left
+	display: inline-block
+	width: 72.50%
+	position: relative
+	margin-right: 62px
+
+.slidepart__title
+	@extend .slideshow__title
+
+.slidepart__iconLeft
+	@extend .slideshow__iconLeft
+
+.slidepart__iconRight
+	@extend .slideshow__iconright
+
+.slidepart__right
+	width: 22.33%
+	vertical-align: top
+	display: inline-block
+
+.slidebar
+	width: 100%
+	position: relative
+	text-align: center
+	margin-bottom: 30px
+
+.slidebar__title
+	@extend .slideshow__title
+	font-size: 14px
+	text-transform: none
+
+.slidebar__iconLeft
+	@extend .slideshow__iconLeft
+	font-size: 15px
+
+.slidebar__iconRight
+	@extend .slideshow__iconright
+	font-size: 15px
+
+.sliedebar__subtitle
+	font-size: 15px
+	text-align: left
+	letter-spacing: 1px
+	text-transform: uppercase
+	font-weight: 600
+	color: $txt_gray
+
+.slidebar__gallery
+	display: inline-block

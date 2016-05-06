@@ -5,8 +5,8 @@
 <!-- ***************************************************************** -->
 	{% include 'header' %}
 		<div class="slider">
-			<a class="arrow next" href="#">
-				<span class="arrows right">
+			<a class="arrow__slider next" href="#">
+				<span class="arrows__slid right">
 					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
 				</span>
 			</a>
@@ -29,8 +29,8 @@
 					</div>
 				</div>
 			</div>
-			<a class="arrow previus" href="#">
-				<span class="arrows left">
+			<a class="arrow__slider previus" href="#">
+				<span class="arrows__slid left">
 					<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 				</span>
 			</a>
@@ -52,93 +52,8 @@
 					</a>
 				</div>
 			</div>
-
-			<div class="widgets clearfix">
-
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-thumbs-o-up widgIcon active" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								suspendisse
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula
-							</p>
-						</div>
-					</div>
-					<div class="widget__button active">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
-
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-key widgIcon" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								maecenas
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
-
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-flag widgIcon" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								aliquam
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
-
-				<div class="widget__total">
-					<div class="widget__singlePart">
-						<div class="widget__container">
-							<a class="widget__icon" href="#">
-								<i class="fa fa-hourglass-half widgIcon" aria-hidden="true"></i>
-							</a>
-							<p class="widget__txtBold">
-								habitasse
-							</p>
-							<p class="widget__txt">
-								Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum 
-							</p>
-						</div>
-					</div>
-					<div class="widget__button">
-						<a class="button" href="#">
-							read more
-						</a>
-					</div>
-				</div>
-			</div>
+			{% include 'widget' %}
+			
 		</div>
 		<div class="sectionVisual__grey">
 			<div class="container">
@@ -173,124 +88,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="container sectList bodyColor">
-			<div class="sectionList section__end">
-				<p class="sectionList__title">
-					Why Choose Us?
-				</p>
-				<ul class="sectionList__content">
-					<li class="sectionList__list">
-						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
-						<p class="sectionList__txt">
-							Quisque at massa ipsum  
-						</p>
-					<li class="sectionList__list">
-						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
-						<p class="sectionList__txt">
-							Maecenas a lorem augue, egestas  
-						</p>
-					</li>
-					<li class="sectionList__list">
-						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
-						<p class="sectionList__txt">
-							Cras vitae felis at lacus eleifend
-						</p>
-					</li>
-					<li class="sectionList__list">
-						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
-						<p class="sectionList__txt">
-							Etiam auctor diam pellentesque
-						</p>
-					</li>
-					<li class="sectionList__list">
-						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
-						<p class="sectionList__txt">
-							Nulla ac massa at dolor 
-						</p>
-					</li>
-					<li class="sectionList__list">
-						<i class="fa fa-arrow-right list" aria-hidden="true"></i>
-						<p class="sectionList__txt">
-							Condimentum eleifend vitae vitae
-						</p>
-					</li>	
-				</ul>
-			</div>
-			<div class="sectionGrafic section__end">
-				<p class="sectionGrafic__title sectionList__txt">
-					Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
-				</p>
-				<div class="sectionGrafic__box">
-					<div class="sectionGrafic__single">
-						<img class="responsiveImg" src="img/index1.png" alt="image-grafico">
-						<p class="widget__txtBold sectionGrafic__txt">
-							suspendisse
-						</p>
-					</div>
-					<div class="sectionGrafic__single">
-						<img class="responsiveImg" src="img/index2.png" alt="image-grafico">
-						<p class="widget__txtBold sectionGrafic__txt">
-							maecenas
-						</p>
-					</div>
-					<div class="sectionGrafic__single">
-						<img class="responsiveImg" src="img/index3.png" alt="image-grafico">
-						<p class="widget__txtBold sectionGrafic__txt">
-							aliquam
-						</p>
-					</div>
-					<div class="sectionGrafic__single">
-						<img class="responsiveImg" src="img/index4.png" alt="image-grafico">
-						<p class="widget__txtBold sectionGrafic__txt">
-							habitasse
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="sectionTxt section__end">
-				<p class="sectionList__title">
-					What Client’s Say?
-				</p>
-				<p class="sectionList__txt sectionTxt__txt">
-					Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum
-				</p>
-				<p class="sectionTxt__cit" >
-					Jonh Doe
-				</p>			
-			</div>
-			<div class="sectionClient">
-				<p class="sectionClient__txt">
-					our happy clients
-				</p>
-				<div class="sectionClient__barra"></div>
-				<a class="sectionClient__icon" href="#">
-					<i class="fa fa-chevron-left icon-barra" aria-hidden="true"></i>
-					<i class="fa fa-chevron-right icon-barra" aria-hidden="true"></i>
-				</a>
-			</div>
-			<div class="sectionClient__box">
-				<div class="sectionClient__brand">
-					<img class="responsiveImg" src="img/jquery.png" alt="#">
-				</div>
-				<div class="sectionClient__brand">
-					<img class="responsiveImg" src="img/jquery.png" alt="#">
-				</div>
-				<div class="sectionClient__brand">
-					<img class="responsiveImg" src="img/jquery.png" alt="#">
-				</div>
-				<div class="sectionClient__brand">
-					<img class="responsiveImg" src="img/jquery.png" alt="#">
-				</div>
-				<div class="sectionClient__brand">
-					<img class="responsiveImg" src="img/jquery.png" alt="#">
-				</div>
-				<div class="sectionClient__brand">
-					<img class="responsiveImg" src="img/jquery.png" alt="#">
-				</div>
-			</div>
-		</div>
 
+		{%include 'grafic' %}
 
+		{%include 'clients' %}
 
 	{% include 'footer' %}
 {% endblock %}

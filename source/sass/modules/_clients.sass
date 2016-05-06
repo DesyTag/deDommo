@@ -1,0 +1,57 @@
+.sectionClient
+	padding-top: 30px
+
+.sectionClient__txt
+	display: inline-block
+	font-size: 14px
+	font-weight: 700
+	color: $bold_gray
+
+	@media screen and (min-width: 650px)
+		font-size: 14px
+	@media screen and (min-width: 1024px)
+		font-size: 16px
+		font-weight: 900
+
+.sectionClient__barra
+	display: inline-block
+	border: 1px solid $txt_gray
+	width: 80%
+	margin: 0px 7px
+
+	@media screen and (min-width: 650px)
+		width: 72%
+
+.sectionClient__icon
+	display: inline-block
+.icon-barra
+	background-color: $bold_gray
+	padding: 2px 3px
+
+.sectionClient__box
+	padding: 40px 0px
+
+.sectionClient__brand
+	display: inline-block
+	background-color: #fff
+	width: 29%
+	padding: 34px
+	margin-left: 4%
+	margin-bottom: 20px
+
+	&:nth-child(3n+1)
+		margin-left: 0%
+
+	@media screen and (min-width: 650px)
+		width: 30%
+
+		&:nth-child(3n+1)
+			margin-left: 0%
+
+	@media screen and (min-width: 1024px)
+		width: 13%
+		margin-left: 4%
+		
+		&:first-child :nth-child(3n+1)
+			margin-left: 0%
+		

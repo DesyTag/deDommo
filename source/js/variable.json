@@ -78,8 +78,16 @@
 		}
 		]
 	},
+
+	"aboutUs":{
+		"titolo": "ABOUT US",
+		"breadcrumbs" : ["Home","About us"]
+
+	},
+	
 	"features":{
 		"titolo": "features",
 		"breadcrumbs" : ["home","features"]
+
 	}
 }
