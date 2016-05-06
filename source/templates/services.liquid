@@ -1,0 +1,29 @@
+{% extends layout %}
+{% block content %}
+{%assign section = "aboutUs"%}
+
+{% include 'header' %} 
+
+{% include 'navigation' %}
+
+{% include 'txtPrePost' %}
+
+{%include 'grafic' %}
+
+<div class="title__widget">
+	<h3 class="title__widgetTitl">
+		our team	
+	</h3>
+</div>
+
+<div class="container aboutWidget">
+	{% include 'widget'%}	
+</div>
+
+{% include 'txtPrePost' %}
+
+{% include 'clients'%}
+
+{% include 'footer' %}
+
+{% endblock %}
