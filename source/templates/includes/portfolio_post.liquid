@@ -1,21 +1,31 @@
 <div class="porfoliopost">
 	<div class="porfoliopost__left">
 		<img class="porfoliopost__img"src="{{item.img}}" alt="" />
-
+		<div class="left__bottompart">
+			<div class="porfoliopost__site">
+				<a class="porfoliopost__linksite">
+					<i class="porfoliopost__icon fa fa-link" aria-hidden="true"></i>{{item.site}}</a>
+				</a>
+			</div>
+			<div class="porfoliopost__button">
+				<a class="porfoliopost__linkbutton" href="#">view detail</a>
+			</div>
+		</div>
 	</div>
 	<div class="porfoliopost__right">
 		<h1 class="porfoliopost__title"> {{item.title}} </h1>
 		<p class="porfoliopost__text">
 			{{item.text}}
 		</p>
-		<div class="porfoliopost__site">
-			<a class="porfoliopost__linksite">
-				<i class="porfoliopost__icon fa fa-link" aria-hidden="true"></i>{{item.site}}</a>
-			</a>
-		</div>
-
+		<div class="right__bottompart">
+			<div class="porfoliopost__site">
+				<a class="porfoliopost__linksite">
+					<i class="porfoliopost__icon fa fa-link" aria-hidden="true"></i>{{item.site}}</a>
+				</a>
+			</div>
 			<div class="porfoliopost__button">
 				<a class="porfoliopost__linkbutton" href="#">view detail</a>
 			</div>
+		</div>
 	</div>
 </div>

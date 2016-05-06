@@ -1,11 +1,11 @@
 {
 	"contact":{
-		"titolo": "CONTACT US",
-		"breadcrumbs" : ["Home","Contact"]
+		"titolo": "contact us",
+		"breadcrumbs" : ["home","contact"]
 	},
 	"blogList":{
-		"titolo": "BLOG",
-		"breadcrumbs" : ["Home","Blog"],
+		"titolo": "blog",
+		"breadcrumbs" : ["home","blog"],
 		"posts":[
 		{
 			"data":"19 May",
@@ -49,8 +49,8 @@
 	},
 
 	"portfolio":{
-		"titolo": "PORTFOLIO",
-		"breadcrumbs" : ["Home","Portfolio"],
+		"titolo": "portfolio",
+		"breadcrumbs" : ["home","portfolio"],
 		"porfoliopost" : [
 		{
 			"title" : "project one",
@@ -78,9 +78,16 @@
 		}
 		]
 	},
-	
+
 	"aboutUs":{
 		"titolo": "ABOUT US",
 		"breadcrumbs" : ["Home","About us"]
+
+	},
+	
+	"features":{
+		"titolo": "features",
+		"breadcrumbs" : ["home","features"]
+
 	}
 }
