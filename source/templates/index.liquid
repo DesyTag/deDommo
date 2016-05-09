@@ -3,6 +3,7 @@
 <!-- ***************************************************************** -->
 <!-- HTML CONTENT-->
 <!-- ***************************************************************** -->
+{%assign section = "index" %}
 	{% include 'header' %}
 		<div class="slider">
 			<a class="arrow__slider next" href="#">
@@ -52,9 +53,11 @@
 					</a>
 				</div>
 			</div>
-			{% include 'widget' %}
-			
 		</div>
+		<div class="container">
+			{% include 'widget'%}
+		</div>
+
 		<div class="sectionVisual__grey">
 			<div class="container">
 				<div class="sectionVisual__greyBox">

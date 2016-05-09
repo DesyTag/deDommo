@@ -1,86 +1,24 @@
 <div class="widgets clearfix">
-
+{% for eachPart in data[section].widget %}
 	<div class="widget__total">
 		<div class="widget__singlePart">
 			<div class="widget__container">
 				<a class="widget__icon" href="#">
-					<i class="fa fa-thumbs-o-up widgIcon active" aria-hidden="true"></i>
+					{{eachPart.iconWidg}}
 				</a>
 				<p class="widget__txtBold">
-					suspendisse
+					{{eachPart.titleWidg}}
 				</p>
 				<p class="widget__txt">
-					Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula
+					{{eachPart.textWidg}}
 				</p>
 			</div>
 		</div>
-		<div class="widget__button active">
+		<div class="widget__button ">
 			<a class="button" href="#">
-				read more
+				{{eachPart.buttonWidg}}
 			</a>
 		</div>
 	</div>
-
-	<div class="widget__total">
-		<div class="widget__singlePart">
-			<div class="widget__container">
-				<a class="widget__icon" href="#">
-					<i class="fa fa-key widgIcon" aria-hidden="true"></i>
-				</a>
-				<p class="widget__txtBold">
-					maecenas
-				</p>
-				<p class="widget__txt">
-					Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum
-				</p>
-			</div>
-		</div>
-		<div class="widget__button">
-			<a class="button" href="#">
-				read more
-			</a>
-		</div>
-	</div>
-
-	<div class="widget__total">
-		<div class="widget__singlePart">
-			<div class="widget__container">
-				<a class="widget__icon" href="#">
-					<i class="fa fa-flag widgIcon" aria-hidden="true"></i>
-				</a>
-				<p class="widget__txtBold">
-					aliquam
-				</p>
-				<p class="widget__txt">
-					Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula
-				</p>
-			</div>
-		</div>
-		<div class="widget__button">
-			<a class="button" href="#">
-				read more
-			</a>
-		</div>
-	</div>
-
-	<div class="widget__total">
-		<div class="widget__singlePart">
-			<div class="widget__container">
-				<a class="widget__icon" href="#">
-					<i class="fa fa-hourglass-half widgIcon" aria-hidden="true"></i>
-				</a>
-				<p class="widget__txtBold">
-					habitasse
-				</p>
-				<p class="widget__txt">
-					Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum 
-				</p>
-			</div>
-		</div>
-		<div class="widget__button">
-			<a class="button" href="#">
-				read more
-			</a>
-		</div>
-	</div>
+{% endfor %}
 </div>

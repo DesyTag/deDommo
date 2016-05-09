@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	$('.header__menu').click(function() {
 		 $(this).addClass('active');
 	})
@@ -22,4 +21,19 @@ $(document).ready(function() {
 		}
 
  	});
+
+	$('.accordion__title').click(function(event){
+
+		var accordionItem = $(this).parent().find('.accordion__text')
+		if ( accordionItem.is(":visible") ) {
+			$(accordionItem).slideUp();
+
+		}
+		else {
+			$('.accordion__text').slideUp();
+			accordionItem.slideDown();
+		}
+		return false
+	});
+
  });

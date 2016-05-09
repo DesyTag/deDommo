@@ -79,15 +79,104 @@
 		]
 	},
 
+	"index":{
+		"widget": [
+		{
+			"iconWidg": "<i class='fa fa-thumbs-o-up widgIcon active' aria-hidden='true'></i>",
+			"titleWidg": "suspendisse oooooo",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+		},
+		{
+			"iconWidg": "<i class='fa fa-key widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "maecenas",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+
+		},
+		{
+
+			"iconWidg": "<i class='fa fa-flag widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "aliquam",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+
+		},
+		{
+			"iconWidg": "<i class='fa fa-hourglass-half widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "habitasse",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+		}
+		]
+	},
+
 	"aboutUs":{
 		"titolo": "ABOUT US",
-		"breadcrumbs" : ["Home","About us"]
+		"breadcrumbs" : ["Home","About us"],
+		"widget": [
+		{
+			"iconWidg": "<i class='fa fa-thumbs-o-up widgIcon active' aria-hidden='true'></i>",
+			"titleWidg": "suspendisse oooooo",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+		},
+		{
+			"iconWidg": "<i class='fa fa-key widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "maecenas",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
 
+		},
+		{
+
+			"iconWidg": "<i class='fa fa-flag widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "aliquam",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+
+		},
+		{
+			"iconWidg": "<i class='fa fa-hourglass-half widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "habitasse",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+		}
+		]
 	},
-	
+
 	"features":{
 		"titolo": "features",
-		"breadcrumbs" : ["home","features"]
+		"breadcrumbs" : ["home","features"],
+		"widget": [
+		{
+			"iconWidg": "<i class='fa fa-thumbs-o-up widgIcon active' aria-hidden='true'></i>",
+			"titleWidg": "swwwwwww",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+		},
+		{
+			"iconWidg": "<i class='fa fa-key widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "maecenas",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+
+		},
+		{
+
+			"iconWidg": "<i class='fa fa-flag widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "aliquam",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+
+		},
+		{
+			"iconWidg": "<i class='fa fa-hourglass-half widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "habitasse",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+		}
+		]
 
 	}
 }
