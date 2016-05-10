@@ -22,4 +22,19 @@ $(document).ready(function() {
 		}
 
  	});
+
+ 	$('.j-serviceBtn').click(function() {
+
+ 		if ('.j-widget__contentImg'.is('visible')) {
+ 			$('.j-widget__contentImg').hiden();
+
+ 			$('.j-widget__contentHiden').addClass('active');
+ 		}
+ 		else {
+ 			$('.j-widget__contentHiden').removeClass('active');
+
+ 		}
+ 		return false;
+
+ 	});
  });

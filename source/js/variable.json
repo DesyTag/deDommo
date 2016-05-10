@@ -143,6 +143,8 @@
 	"services":{
 		"titolo": "SERVICES",
 		"breadcrumbs" : ["Home","About us"],
+		"txt": "Maecenas a lorem augue",
+		"buttonWidg": "john Doe",
 		"arrowList": [
 		{
 			"title":  "PLANNING"
@@ -151,23 +153,6 @@
 			"title": "DEVELOPMENT"
 		}
 		],
-		"widgImg":[
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		},
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		},
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		},
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		}
-		]
+		
 	}
 }

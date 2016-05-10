@@ -16,7 +16,47 @@
 		{%include 'grafic' %}
 	</div>
 
-	{%include 'widgImg' %}
+	<div class="title__widget">
+		<h3 class="title__widgetTitl">
+			Pricing tables
+		</h3>
+	</div>
+	<div class="container aboutWidget">
+	<div class="widgets clearfix">
+		{% for itemWidg in data[section].widgImg %}
+
+		<div class="widget__total">
+			<div class="widget__button serviceBtn j-serviceBtn">
+				<a class="button" href="#">
+					{{itemWidg.buttonWidg}}
+				</a>
+			</div>
+			<div class="widget__singlePart">
+				<div class="widget__contentHiden j-widget__contentHiden">
+					<p class="widget__serviceTxt">
+						{{itemWidg.txt}}
+					</p>
+					<p class="widget__serviceTxt">
+						{{itemWidg.txt}}
+					</p>
+					<p class="widget__serviceTxt">
+						{{itemWidg.txt}}
+					</p>
+					<p class="widget__serviceTxt">
+						{{itemWidg.txt}}
+					</p>		
+				</div>
+			</div>
+			<div class="widget__button serviceBtn j-serviceBtn">
+				<a class="button" href="#">
+					{{itemWidg.buttonWidg}}
+				</a>
+			</div>
+		</div>
+
+		{% endfor %}
+	</div>
+</div>
 
 	{% include 'txtPost' %}
 
