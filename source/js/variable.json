@@ -114,33 +114,22 @@
 	"aboutUs":{
 		"titolo": "ABOUT US",
 		"breadcrumbs" : ["Home","About us"],
-		"widget": [
+		"widgImg":[
 		{
-			"iconWidg": "<i class='fa fa-thumbs-o-up widgIcon active' aria-hidden='true'></i>",
-			"titleWidg": "suspendisse oooooo",
-			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
-			"buttonWidg": "read more"
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
 		},
 		{
-			"iconWidg": "<i class='fa fa-key widgIcon' aria-hidden='true'></i>",
-			"titleWidg": "maecenas",
-			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
-			"buttonWidg": "read more"
-
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
 		},
 		{
-
-			"iconWidg": "<i class='fa fa-flag widgIcon' aria-hidden='true'></i>",
-			"titleWidg": "aliquam",
-			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
-			"buttonWidg": "read more"
-
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
 		},
 		{
-			"iconWidg": "<i class='fa fa-hourglass-half widgIcon' aria-hidden='true'></i>",
-			"titleWidg": "habitasse",
-			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
-			"buttonWidg": "read more"
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
 		}
 		]
 	},
@@ -154,12 +143,30 @@
 	"services":{
 		"titolo": "SERVICES",
 		"breadcrumbs" : ["Home","About us"],
-		"grafic": [
+		"arrowList": [
 		{
 			"title":  "PLANNING"
 		},
 		{
 			"title": "DEVELOPMENT"
+		}
+		],
+		"widgImg":[
+		{
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
+		},
+		{
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
+		},
+		{
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
+		},
+		{
+			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
+			"buttonWidg": "john Doe"
 		}
 		]
 	}

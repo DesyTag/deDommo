@@ -6,26 +6,19 @@
 
 	{% include 'navigation' %}
 
-		<div class="servicesTxt post">
+	{% include 'txtPre' %}
 
-			{% include 'txtPrePost' %}		
-		</div>
-			
-		{% for itemGrafic in data[section].grafic %}
-			{%include 'grafic' %}
+	<div class="container sectList bodyColor">
+		{% for itemList in data[section].arrowList %}
+			{%include 'arrowList' %}
 		{% endfor %}
 
-		<div class="title__widget">
-			<h3 class="title__widgetTitl">
-				Pricing tables
-			</h3>
-		</div>
+		{%include 'grafic' %}
+	</div>
 
-		<div class="container aboutWidget">
-			{% include 'widget'%}	
-		</div>
+	{%include 'widgImg' %}
 
-	{% include 'txtPrePost' %}
+	{% include 'txtPost' %}
 
 	{% include 'clients'%}
 

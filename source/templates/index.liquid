@@ -6,7 +6,7 @@
 {%assign section = "index" %}
 	{% include 'header' %}
 	
-		<div class="slider">
+		<div id="index" class="slider">
 			<a class="arrow__slider next" href="#">
 				<span class="arrows__slid right">
 					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
@@ -56,7 +56,7 @@
 			</div>
 		</div>
 		<div class="container">
-			{% include 'widget' %}
+			{% include 'widget',  %}
 		</div>
 
 		<div class="sectionVisual__grey">
@@ -93,7 +93,11 @@
 			</div>
 		</div>
 
-		{%include 'grafic' %}
+		<div class="container sectList bodyColor">
+			{%include 'arrowList' %}
+			{%include 'grafic' %}
+			{%include 'cit' %}	
+		</div>
 
 		{%include 'clients' %}
 

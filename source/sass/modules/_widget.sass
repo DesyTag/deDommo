@@ -1,5 +1,5 @@
 .widgets
-	padding-top: 50px
+	padding-top: 25px
 	width: 100%
 
 .widget__total
@@ -32,15 +32,16 @@
 	background-color: #fff
 
 .widget__container
-	padding: 15px 6px 36px
 	text-align: center
 	margin: 18px
-	
+	min-height: 50px
+
 	@media screen and (min-width: 650px)
 		margin: 18px
 	@media screen and (min-width: 1024px)
-		padding: 30px 20px 73px
 		margin: 0px
+		padding-bottom: 80px
+		padding-top: 40px
 
 .widget__icon
 	font-size: 33px
@@ -78,29 +79,22 @@
 	font-size: 13px
 	font-weight: 300
 	line-height: 17px
+	width: 90%
+	margin: 0 auto
 	@media screen and (min-width: 1024px)
 		line-height: 23px
 		font-size: 14px
 
 .widget__button
-	background-color: $violet
-	display: inline-block
-	font-size: 20px
 	text-align: center
-	border-radius: 7px
-	box-shadow: 0px 4px 0px $bord_violet
-	left: 11.5%
 	position: relative
-	margin: -10% 0%
-	vertical-align: bottom
-	font-weight: 300
-	&.active
-		background-color: $azure
-		box-shadow: 0px 4px 0px $bord_azure
+	display: block
+	bottom: 20px
 
 	@media screen and (min-width: 650px)
-		left: 25.5%
-		margin-top: -50px
+		// left: 25.5%
+		// margin-top: -50px
+
 	@media screen and (min-width: 1024px)
-		margin: -10% 0%
-		left: 11.5%
+		// margin: -10% 0%
+		// left: 11.5%
