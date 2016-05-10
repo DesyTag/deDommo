@@ -149,5 +149,18 @@
 		"titolo": "features",
 		"breadcrumbs" : ["home","features"]
 
+	},
+
+	"services":{
+		"titolo": "SERVICES",
+		"breadcrumbs" : ["Home","About us"],
+		"grafic": [
+		{
+			"title":  "PLANNING"
+		},
+		{
+			"title": "DEVELOPMENT"
+		}
+		]
 	}
 }

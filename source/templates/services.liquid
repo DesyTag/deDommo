@@ -1,29 +1,34 @@
 {% extends layout %}
 {% block content %}
-{%assign section = "aboutUs"%}
+	{%assign section = "services"%}
 
-{% include 'header' %} 
+	{% include 'header' %} 
 
-{% include 'navigation' %}
+	{% include 'navigation' %}
 
-{% include 'txtPrePost' %}
+		<div class="servicesTxt post">
 
-{%include 'grafic' %}
+			{% include 'txtPrePost' %}		
+		</div>
+			
+		{% for itemGrafic in data[section].grafic %}
+			{%include 'grafic' %}
+		{% endfor %}
 
-<div class="title__widget">
-	<h3 class="title__widgetTitl">
-		our team	
-	</h3>
-</div>
+		<div class="title__widget">
+			<h3 class="title__widgetTitl">
+				Pricing tables
+			</h3>
+		</div>
 
-<div class="container aboutWidget">
-	{% include 'widget'%}	
-</div>
+		<div class="container aboutWidget">
+			{% include 'widget'%}	
+		</div>
 
-{% include 'txtPrePost' %}
+	{% include 'txtPrePost' %}
 
-{% include 'clients'%}
+	{% include 'clients'%}
 
-{% include 'footer' %}
+	{% include 'footer' %}
 
 {% endblock %}
