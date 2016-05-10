@@ -36,4 +36,26 @@ $(document).ready(function() {
 		return false
 	});
 
+
+
+	$('.j__tab').click(function() {
+
+		var select = $(this);
+		var seleTab = select.attr('href');
+
+		if (select.hasClass('active')) {
+
+
+
+		} else {
+
+			$('.j__tabCover').removeClass('visible')
+			$(seleTab).addClass('visible')
+
+			$('.j__tab').removeClass('active')
+			$(select).addClass('active')
+		}
+		return false
+	});
+
  });

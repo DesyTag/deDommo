@@ -128,3 +128,128 @@
 	margin-left: 39px
 	display: inline-block
 	vertical-align: top
+
+
+.tab
+	padding-bottom: 30px
+	width: 70%
+
+.tab__item
+	display: inline-block
+
+.j__tab
+	display: inline-block
+	background-color: $violet
+	margin-right: 10px
+	padding: 17px 40px
+	text-transform: uppercase
+	border-radius: 5px
+	color: white
+
+	&.active .j__tabCover
+		display: block
+
+	&.active
+		background-color: #f8f8f8
+		color: $txt_gray
+
+.tab__content
+	padding: 30px
+	width: 100%
+	border-radius: 4px
+	background: #f8f8f8
+	border: 1px solid #efefef
+	box-shadow: 0px 4px 8px #dedede
+
+.j__tabCover
+	display: none
+	line-height: 21px
+
+	&.visible
+		display: block
+
+.porfolioRow
+	font-size: 0
+	padding-bottom: 30px
+
+.porfolioRow__box
+	width: 22%
+	position: relative
+	background-color: #f8f8f8
+	display: inline-block
+	margin-right: 4%
+	border-radius: 10px
+
+	&::before
+		content: " "
+		padding-top: 100%
+		display: block
+
+	&:hover
+		background-color: $violet
+
+	&:hover .porfolioRow__icon
+		display: none
+
+	&:hover .porfolioRow__icons
+		display: block
+
+
+.nomargin
+	margin-right: 0
+
+.porfolioRow__conteiner
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.porfolioRow__icon
+	font-size: 80px
+	position: absolute
+	left: 50%
+	top: 50%
+	margin: 0 auto
+	color: #ececec
+	transform: translate(-50%,-50%)
+	display: block
+
+.porfolioRow__icons
+	display: none
+	transform: translate(-50%,-50%)
+	position: absolute
+	left: 50%
+	top: 50%
+	width: 100%
+	text-align: center
+
+.porfolioRow__iconHover
+	color: white
+	font-size: 40px
+	margin: 0 auto
+	color: #ececec
+	margin-right: 12px
+	display: inline-block
+	padding: 10px
+	background-color: $azure
+	border-radius: 6px
+
+	&:hover
+		background-color: #71244b
+
+.two__porfolioRow
+	border-bottom: 2px solid grey
+	font-size: 0
+	padding-bottom: 50px
+
+
+
+.porfolioRow__twobox
+	width: 48%
+	@extend .porfolioRow__box
+
+	&::before
+		content: " "
+		padding-top: 70%
+		display: block
