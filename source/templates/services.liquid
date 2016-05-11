@@ -1,0 +1,27 @@
+{% extends layout %}
+{% block content %}
+	{%assign section = "services"%}
+
+	{% include 'header' %} 
+
+	{% include 'navigation' %}
+
+	{% include 'txtPre' %}
+
+	<div class="container sectList bodyColor">
+		{% for itemList in data[section].arrowList %}
+			{%include 'arrowList' %}
+		{% endfor %}
+
+		{%include 'grafic' %}
+	</div>
+
+	{%include 'widgImg' %}
+
+	{% include 'txtPost' %}
+
+	{% include 'clients'%}
+
+	{% include 'footer' %}
+
+{% endblock %}

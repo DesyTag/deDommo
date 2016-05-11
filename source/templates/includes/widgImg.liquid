@@ -1,0 +1,50 @@
+<!-- <div class="title__widget">
+	<h3 class="title__widgetTitl">
+		Pricing tables
+	</h3>
+</div> -->
+<div class="container aboutWidget">
+	<div class="widgets clearfix">
+		{% for itemWidg in data[section].widgImg %}
+
+		<div class="widget__total">
+			<div class="widget__singleBox">
+				<div class="widget__contentImg">
+					{{itemWidg.imgWidg}}
+				</div>
+				<div class="widget__contentHiden">
+					<p class="widget__descript">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
+					</p>
+					<li class="widget__itemService">
+						<a class="widget__itemSocial" href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li  class="widget__itemService">
+						<a class="widget__itemSocial" href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li  class="widget__itemService">
+						<a class="widget__itemSocial" href="#">
+							<i class="fa fa-tumblr" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li  class="widget__itemService">
+						<a class="widget__itemSocial" href="#">
+							<i class="fa fa-rss" aria-hidden="true"></i>
+						</a>
+					</li>
+				</div>
+			</div>
+			<div class="widget__button serviceBtn ">
+				<a class="button" href="#">
+					{{itemWidg.buttonWidg}}
+				</a>
+			</div>
+		</div>
+
+		{% endfor %}
+	</div>
+</div>

@@ -1,24 +1,27 @@
+
 <div class="widgets clearfix">
-{% for eachPart in data[section].widget %}
-	<div class="widget__total">
-		<div class="widget__singlePart">
-			<div class="widget__container">
-				<a class="widget__icon" href="#">
-					{{eachPart.iconWidg}}
+ 
+	{% for eachPart in data[section].widget %}
+
+		<div class="widget__total">
+			<div class="widget__singlePart">
+				<div class="widget__container">
+					<a class="widget__icon" href="#">
+						{{eachPart.iconWidg}}
+					</a>
+					<p class="widget__txtBold">
+						{{eachPart.titleWidg}}
+					</p>
+					<p class="widget__txt">
+						{{eachPart.textWidg}}
+					</p>
+				</div>
+			</div>
+			<div class="widget__button ">
+				<a class="button" href="#">
+					{{eachPart.buttonWidg}}
 				</a>
-				<p class="widget__txtBold">
-					{{eachPart.titleWidg}}
-				</p>
-				<p class="widget__txt">
-					{{eachPart.textWidg}}
-				</p>
 			</div>
 		</div>
-		<div class="widget__button ">
-			<a class="button" href="#">
-				{{eachPart.buttonWidg}}
-			</a>
-		</div>
-	</div>
-{% endfor %}
+	{% endfor %}
 </div>
