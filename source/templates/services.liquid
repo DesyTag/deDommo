@@ -23,33 +23,33 @@
 	</div>
 	<div class="container aboutWidget">
 	<div class="widgets clearfix">
-		{% for itemWidg in data[section].widgImg %}
+		{% for item in data[section].widgBox %}
 
 		<div class="widget__total">
-			<div class="widget__button serviceBtn j-serviceBtn">
-				<a class="button" href="#">
-					{{itemWidg.buttonWidg}}
+			<div class="widget__button btnTop j-serviceBtn">
+				<a class="button serviceBtn btnTop" href="#">
+					{{item.buttonWidgTop}}
 				</a>
 			</div>
 			<div class="widget__singlePart">
-				<div class="widget__contentHiden j-widget__contentHiden">
+				<div class="widget__contentServ">
 					<p class="widget__serviceTxt">
-						{{itemWidg.txt}}
+						{{item.txt}}
 					</p>
 					<p class="widget__serviceTxt">
-						{{itemWidg.txt}}
+						{{item.txt}}
 					</p>
 					<p class="widget__serviceTxt">
-						{{itemWidg.txt}}
+						{{item.txt}}
 					</p>
 					<p class="widget__serviceTxt">
-						{{itemWidg.txt}}
+						{{item.txt}}
 					</p>		
 				</div>
 			</div>
-			<div class="widget__button serviceBtn j-serviceBtn">
-				<a class="button" href="#">
-					{{itemWidg.buttonWidg}}
+			<div class="widget__button j-serviceBtn">
+				<a class="button serviceBtn" href="#">
+					{{item.buttonWidg}}
 				</a>
 			</div>
 		</div>

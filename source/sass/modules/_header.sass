@@ -1,3 +1,16 @@
+.wrapper
+	left: 0
+	position: relative
+	.menuMobile &
+		left: 70%
+		@media screen and (min-width: 650px)
+			left: 50%
+		@media screen and (min-width: 1024px)
+			left: 0%
+
+.menuMobile
+	overflow-x: hidden
+
 .header
 	background-color: $violet
 	width: 100%
@@ -10,15 +23,24 @@ li
 
 .header__container 
 	padding: 20px 0 14px
+	position: relative
+	left: 0
+	transition: left .4s ease
 
-	// .menuMobile &
-	// 	left: 0
+	.menuMobile &
+		left: 70%
 
 	@media screen and (min-width: 650px)
 		padding: 20px 0 14px
+		left: 0
+		.menuMobile &
+			left: 50%
 
 	@media screen and (min-width: 1024px)
 		padding: 20px 0 14px
+		left: 0
+		.menuMobile &
+			left: 0%
 		
 
 
@@ -57,6 +79,17 @@ li
 
 .header__navbar
 	display: none
+
+	.menuMobile &
+		display: block
+		background-color: $dark_violet
+		position: fixed
+		width: 70%
+		height: 100%
+		left: 0%
+		top: 0%
+		transition: left .4s ease
+
 	@media screen and (min-width: 650px)
 		padding-top: 8px
 		float: none
@@ -70,6 +103,8 @@ li
 
 .header__item
 	display: inline-block
+	.menuMobile &
+		display: block
 
 	@media screen and (min-width: 650px)
 		&.searchItem

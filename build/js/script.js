@@ -1,27 +1,29 @@
 $(document).ready(function() {
 
-	$('.header__menu').click(function() {
+	$('.j-header__menu').on('click',function(){
 		 $(this).addClass('active');
-	})
-		// selezione active del menu
+	});
 
-		// $('.j-menuToggle').on('click',function(){
-		// 	$('.header__container').toggleClass('menuMobile');
-		// return false;
+	$('.j-menuToggle').on('click',function(){
+		$('body').toggleClass('menuMobile');
+		
+		return false;
+	});
 
-	$('.j-menuToggle').click(function(){
 
-		var selectedAccordion = $(this).parent().find('.header__navbar');
+	// $('.j-menuToggle').click(function(){
 
-		if ( selectedAccordion.is(':visible') ){  // TRUE
-			selectedAccordion.slideUp(300);
+	// 	var selectedAccordion = $(this).parent().find('.header__navbar');
 
-		} else { //FALSE
-			$('.header__navbar').slideUp(300);
-			selectedAccordion.slideDown(300);
-		}
+	// 	if ( selectedAccordion.is(':visible') ){  // TRUE
+	// 		selectedAccordion.slideUp(300);
 
- 	});
+	// 	} else { //FALSE
+	// 		$('.header__navbar').slideUp(300);
+	// 		selectedAccordion.slideDown(300);
+	// 	}
+
+ // 	}); --> menu portfolio
 
  	$('.j-serviceBtn').click(function() {
 

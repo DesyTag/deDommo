@@ -104,7 +104,7 @@ $bord_azure: #20a8da
 	padding: 9px 20px
 	background-color: $violet
 	display: inline-block
-	font-size: 14px
+	font-size: 15px
 	border-radius: 7px
 	box-shadow: 0px 4px 0px $bord_violet
 	font-weight: 300
@@ -115,8 +115,10 @@ $bord_azure: #20a8da
 
 	@media screen and (min-width: 650px)
 		padding: 10px 22px
+
 	@media screen and (min-width: 1024px)
 		padding: 12px 40px
+		width: 66%
 
 .section__end
 	width: 100%
@@ -204,10 +206,17 @@ $bord_azure: #20a8da
 	text-align: center
 	position: relative
 	display: block
-	bottom: 20px
+	bottom: 36px
+
+	&.btnTop
+		top: 20px
 
 	@media screen and (min-width: 650px)
+		bottom: 20px
 
 	@media screen and (min-width: 1024px)
+		bottom: 20px
 		// margin: -10% 0%
 		// left: 11.5%
+
+

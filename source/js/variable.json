@@ -114,23 +114,28 @@
 	"aboutUs":{
 		"titolo": "ABOUT US",
 		"breadcrumbs" : ["Home","About us"],
-		"widgImg":[
+		"arrowList": [
 		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		},
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		},
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
-		},
-		{
-			"imgWidg": "<img class='responsiveImg' src='img/widgImg.png' alt='image'>",
-			"buttonWidg": "john Doe"
+			"title":  "PLANNING"
 		}
+		],
+		"widgImg":[
+			{
+				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image-visual'>",
+				"buttonWidg": "john Doe"
+			},
+			{
+				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>",
+				"buttonWidg": "john Doe"
+			},
+			{
+				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>",
+				"buttonWidg": "john Doe"
+			},
+			{
+				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>",
+				"buttonWidg": "john Doe"
+			}
 		]
 	},
 
@@ -143,8 +148,6 @@
 	"services":{
 		"titolo": "SERVICES",
 		"breadcrumbs" : ["Home","About us"],
-		"txt": "Maecenas a lorem augue",
-		"buttonWidg": "john Doe",
 		"arrowList": [
 		{
 			"title":  "PLANNING"
@@ -153,6 +156,32 @@
 			"title": "DEVELOPMENT"
 		}
 		],
-		
+		"widgBox": [
+			{
+				"buttonWidgTop": "START",
+				"txt": "Maecenas a lorem augue",
+				"buttonWidg": "Buy NOW"
+			},
+			{
+				"buttonWidgTop": "BASIC",
+				"txt": "Maecenas a lorem augue",
+				"buttonWidg": "Buy NOW"
+			},
+			{
+				"buttonWidgTop": "BUSINESS",
+				"txt": "Maecenas a lorem augue",
+				"buttonWidg": "Buy NOW"
+			},
+			{
+				"buttonWidgTop": "EXTENDED",
+				"txt": "Maecenas a lorem augue",
+				"buttonWidg": "Buy NOW"
+			}
+		]
+	},
+
+	"portfolioWord": {
+		"titolo": "PORTFOLIO",
+		"breadcrumbs" : ["Home","Portfolio","WORDPRESS"]
 	}
 }
