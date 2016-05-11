@@ -75,14 +75,17 @@
 	width: 90%
 
 .form__button
-	background-color: $azure
-	display: block
+	display: inline-block
 	padding: 12px 40px
 	margin-top: 20px
 	border-radius: 5px
 	border: none
 	text-transform: uppercase
 	color: white
+	background-color: $azure
+	&:hover
+		background: $violet
+
 
 .contact__address
 	width: 100%
@@ -103,6 +106,8 @@
 .contact__item
 	display: block
 	margin-top: 20px
+	position: relative
+	padding-left: 35px
 
 	&:first-child
 		margin-top: 0px
@@ -112,6 +117,9 @@
 	color: $txt_gray
 	font-size: 20px
 	margin-right: 13px
+	position: absolute
+	left: 0
+	min-height: 40px
 
 .mapIcon
 	font-size: 40px
@@ -121,9 +129,14 @@
 	display: inline-block
 	color: $txt_gray
 	font-size: 10px
+
 	@media screen and (min-width: 1024px)
-		font-size: 13px
+
+	font-size: 16px
+	line-height: 22px
 
 .contact__email
 	color: $azure
 	text-decoration: underline
+	&:hover
+		color: $violet

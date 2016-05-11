@@ -78,8 +78,12 @@
 		}
 		]
 	},
-	
+
 	"index":{
+		"sectiongrey": {
+			"title": "Some of our top services",
+			"paragrafo": "Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. "
+		},
 		"widget": [
 		{
 			"iconWidg": "<i class='fa fa-thumbs-o-up widgIcon active' aria-hidden='true'></i>",
@@ -141,7 +145,54 @@
 
 	"features":{
 		"titolo": "features",
-		"breadcrumbs" : ["home","features"]
+		"breadcrumbs" : ["home","features"],
+		"sectiongrey": {
+			"title": "Headline",
+			"paragrafo": "Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. "
+		},
+		"arrowList": [
+		{
+			"title":  "Arrow list font size 13px"
+		},
+		{
+			"title": "List font size 14px"
+		},
+		{
+			"title":  "Arrow list font size 13px"
+		},
+		{
+			"title": "List font size 14px"
+		}
+		],
+		"widget": [
+		{
+			"iconWidg": "<i class='fa fa-thumbs-o-up widgIcon active' aria-hidden='true'></i>",
+			"titleWidg": "swwwwwww",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+		},
+		{
+			"iconWidg": "<i class='fa fa-key widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "maecenas",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+
+		},
+		{
+
+			"iconWidg": "<i class='fa fa-flag widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "aliquam",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula",
+			"buttonWidg": "read more"
+
+		},
+		{
+			"iconWidg": "<i class='fa fa-hourglass-half widgIcon' aria-hidden='true'></i>",
+			"titleWidg": "habitasse",
+			"textWidg": "Quisque id tellus quis risus vehicula vehicula ut turpis lorem ipsum dolor sit amet vehicula lorem ipsum",
+			"buttonWidg": "read more"
+		}
+		]
 
 	},
 

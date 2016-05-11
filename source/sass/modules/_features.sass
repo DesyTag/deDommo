@@ -1,0 +1,350 @@
+.slideshow
+	position: relative
+	padding-bottom: 60px
+
+.slideshow__img
+	width: 100%
+	display: block
+	box-shadow: 0px 4px 8px #dedede
+	border: 1px solid #efefef
+
+.slideshow__title
+	position: absolute
+	top: 75%
+	left: 50%
+	transform: translate(-50%, -50%)
+	color: $txt_gray
+	font-size: 24px
+	letter-spacing: 2px
+
+.slideshow__iconLeft
+	position: absolute
+	display: block
+	top: 40%
+	left: 0
+	background-color: $azure
+	color: white
+	font-size: 50px
+	padding: 10px
+
+.slideshow__iconright
+	right: 0
+	background-color: $azure
+	color: white
+	font-size: 50px
+	padding: 10px
+	position: absolute
+	display: block
+	top: 40%
+
+.slidepart
+	width: 100%
+	font-size: 0
+	padding-bottom: 60px
+
+.slidepart__left
+	display: inline-block
+	width: 72.50%
+	position: relative
+	margin-right: 62px
+
+.slidepart__title
+	@extend .slideshow__title
+
+.slidepart__iconLeft
+	@extend .slideshow__iconLeft
+
+.slidepart__iconRight
+	@extend .slideshow__iconright
+
+.slidepart__right
+	width: 22.33%
+	vertical-align: top
+	display: inline-block
+
+.slidebar
+	width: 100%
+	position: relative
+	text-align: center
+	margin-bottom: 30px
+
+.slidebar__title
+	@extend .slideshow__title
+	font-size: 14px
+	text-transform: none
+
+.slidebar__iconLeft
+	@extend .slideshow__iconLeft
+	font-size: 15px
+
+.slidebar__iconRight
+	@extend .slideshow__iconright
+	font-size: 15px
+
+.sliedebar__subtitle
+	font-size: 15px
+	text-align: left
+	letter-spacing: 1px
+	text-transform: uppercase
+	font-weight: 600
+	color: $txt_gray
+
+.slidebar__gallery
+	display: inline-block
+	margin-top: 30px
+
+.slidebar__img
+	margin-right: 19px
+	margin-bottom: 19px
+
+.accordion__left
+	margin-top: 100px
+	width: 70%
+	display: inline-block
+	margin-bottom: 30px
+
+.accordion__section
+	box-shadow: 0px 4px 8px #dedede
+	border: 1px solid #efefef
+	margin-bottom: 10px
+
+.accordion__title
+	padding: 20px
+	background-color: #f8f8f8
+	text-transform: uppercase
+	font-size: 20px
+	display: block
+	color: $txt_gray
+
+.accordion__text
+	padding: 30px
+	display: none
+	font-size: 15px
+	background-color: white
+
+.accordion__right
+	margin-top: 100px
+	width: 26%
+	margin-left: 39px
+	display: inline-block
+	vertical-align: top
+
+
+.tab
+	padding-bottom: 30px
+	width: 70%
+
+.tab__item
+	display: inline-block
+
+.j__tab
+	display: inline-block
+	background-color: $violet
+	margin-right: 10px
+	padding: 17px 40px
+	text-transform: uppercase
+	border-radius: 5px
+	color: white
+
+	&.active .j__tabCover
+		display: block
+
+	&.active
+		background-color: #f8f8f8
+		color: $txt_gray
+
+.tab__content
+	padding: 45px
+	width: 100%
+	border-radius: 4px
+	background: #f8f8f8
+	border: 1px solid #efefef
+	box-shadow: 0px 4px 8px #dedede
+
+.j__tabCover
+	display: none
+	line-height: 23px
+
+	&.visible
+		display: block
+
+.porfolioRow
+	font-size: 0
+	padding-bottom: 30px
+
+.porfolioRow__box
+	width: 22%
+	position: relative
+	background-color: #f8f8f8
+	display: inline-block
+	margin-right: 4%
+	border-radius: 10px
+
+	&::before
+		content: " "
+		padding-top: 100%
+		display: block
+
+	&:hover
+		background-color: $violet
+
+	&:hover .porfolioRow__icon
+		display: none
+
+	&:hover .porfolioRow__icons
+		display: block
+
+
+.nomargin
+	margin-right: 0
+
+.porfolioRow__conteiner
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.porfolioRow__icon
+	font-size: 80px
+	position: absolute
+	left: 50%
+	top: 50%
+	margin: 0 auto
+	color: #ececec
+	transform: translate(-50%,-50%)
+	display: block
+
+.porfolioRow__icons
+	display: none
+	transform: translate(-50%,-50%)
+	position: absolute
+	left: 50%
+	top: 50%
+	width: 100%
+	text-align: center
+
+.porfolioRow__iconHover
+	color: white
+	font-size: 40px
+	margin: 0 auto
+	color: #ececec
+	margin-right: 12px
+	display: inline-block
+	padding: 10px
+	background-color: $azure
+	border-radius: 6px
+
+	&:hover
+		background-color: #71244b
+
+.two__porfolioRow
+	border-bottom: 2px solid grey
+	font-size: 0
+	padding-bottom: 50px
+
+
+
+.porfolioRow__twobox
+	width: 48%
+	@extend .porfolioRow__box
+
+	&::before
+		content: " "
+		padding-top: 70%
+		display: block
+
+.headline
+	width: 100%
+	padding: 45px 0 0
+	border-bottom: 2px solid grey
+
+.headline__grid
+	width: 100%
+	padding-bottom: 36px
+	font-size: 0
+
+.headline__title
+	text-transform: capitalize
+	font-weight: 500
+	font-size: 18px
+	text-align: left
+	padding-bottom: 15px
+	color: $bold_gray
+
+.headline__text
+	text-align: left
+	font-size: 14px
+	line-height: 20px
+	font-weight: 100
+
+.paddingRight
+	padding-right: 10px
+
+.headline__halfconteiner
+	width: 50%
+	display: inline-block
+	vertical-align: top
+
+.headline__thirdconteiner
+	width: 69%
+	padding-right: 20px
+	@extend .headline__halfconteiner
+
+.headline__oneconteiner
+	width: 30%
+	@extend .headline__halfconteiner
+
+.headline__forconteiner
+	width: 25%
+	padding-right: 15px
+	@extend .headline__halfconteiner
+
+
+.arrowLis__featueres
+	border-bottom: 2px solid grey
+	padding-bottom: 40px
+
+.sectionGrey____featueres
+	padding: 40px 0
+
+.table
+	font-size: 0
+	padding-bottom: 40px
+
+.table__right
+	width: 48%
+	border-radius: 3px
+	box-shadow: 0px 4px 8px #dedede
+	border: 1px solid #efefef
+	display: inline-block
+	vertical-align: top
+	margin-right: 24px
+
+.table__section
+	width: 100%
+
+.table__title
+	background-color: $violet
+	text-align: left
+	padding: 20px
+	color: white
+	font-size: 16px
+	border-left: 1px solid #ECECEC
+.azure
+	background-color: $azure
+	
+.table__text
+	padding: 15px
+	border-left: 1px solid #ECECEC
+	border-bottom: 1px solid #ECECEC
+	font-size: 13px
+	text-align: center
+
+.table__left
+	width: 48%
+	border-radius: 3px
+	box-shadow: 0px 4px 8px #dedede
+	border: 1px solid #efefef
+	display: inline-block
+	vertical-align: top
