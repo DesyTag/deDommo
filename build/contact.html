@@ -30,19 +30,20 @@
 
 
 	<header class="header">
-	<div class="container">
+	<div class="container header__fixed">
 		<div class="header__container clearfix">
-			<a class="header__brand" href="#">
-				MODUS 
-				<span class="header__brandText"> versus</span>
-			</a>
-			<div class="header__mobileIcon">
-				<a class="headerMobile__hamburger j-menuToggle" href="#"><i class="material-icons">menu</i></a>
-			</div>
-			
+			<!-- <div class="header__fixed"> -->
+				<a class="header__brand" href="#">
+					MODUS 
+					<span class="header__brandText"> versus</span>
+				</a>
+				<div class="header__mobileIcon">
+					<a class="headerMobile__hamburger j-menuToggle" href="#"><i class="material-icons">menu</i></a>
+				</div>
+			<!-- </div> -->
 			<nav class="header__navbar clearfix" >
 				<li class="header__item" >
-					<a class="header__menu j-header__menu active" href="#index" title="menu-voice">
+					<a class="header__menu active" href="#index" title="menu-voice">
 						home
 					</a>
 				</li>
@@ -56,30 +57,32 @@
 						services
 					</a>
 				</li>
-				<li class="header__item" >
-					<a class="header__menu" href="#portfolio" title="menu-voice">
+				<li class="header__item j-header__item" >
+					<a class="header__menu j-header__menu" href="#portfolio" title="menu-voice">
 						<span class="header__link">
 							<i class="material-icons iconNav">keyboard_arrow_down</i>
 							portfolio
 						</span>
 					</a>
-					<ul class="header__subMenu">
-						<li class="header__voice">
-							<a class="header__subVoice" href="#">
-								portfolio column page
-							</a>
-						</li>
-						<li class="header__voice">
-							<a class="header__subVoice" href="#">
-								portfolio column page
-							</a>
-						</li>
-						<li class="header__voice">
-							<a class="header__subVoice" href="#">
-								portfolio column page
-							</a>
-						</li>
-					</ul>
+					<div class="header__subContent">
+						<ul class="header__subMenu">
+							<li class="header__voice">
+								<a class="header__subVoice" href="#">
+									portfolio column page
+								</a>
+							</li>
+							<li class="header__voice">
+								<a class="header__subVoice" href="#">
+									portfolio column page
+								</a>
+							</li>
+							<li class="header__voice">
+								<a class="header__subVoice" href="#">
+									portfolio column page
+								</a>
+							</li>
+						</ul>
+					</div>
 				</li>
 				<li class="header__item" >
 					<a class="header__menu" href="#blog" title="menu-voice">

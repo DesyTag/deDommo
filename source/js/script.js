@@ -1,11 +1,17 @@
 $(document).ready(function() {
-<<<<<<< HEAD
-
 	$('.j-header__menu').on('click',function(){
-=======
-	$('.header__menu').click(function() {
->>>>>>> 997f6775e12228998f5ef748400bbae96c9e9f91
-		 $(this).addClass('active');
+		var mob = $(this).parent().find('.header__subContent');
+
+		if (mob.is(':visible') ) {
+			mob.slideUp('slow');
+		}
+		else {
+			$('.header__subContent').slideUp('slow');
+			mob.slideDown('slow');
+		}
+
+		 // this.addClass('.header__subMenu');
+
 	});
 
 	$('.j-menuToggle').on('click',function(){
@@ -13,21 +19,6 @@ $(document).ready(function() {
 		
 		return false;
 	});
-
-
-	// $('.j-menuToggle').click(function(){
-
-	// 	var selectedAccordion = $(this).parent().find('.header__navbar');
-
-	// 	if ( selectedAccordion.is(':visible') ){  // TRUE
-	// 		selectedAccordion.slideUp(300);
-
-	// 	} else { //FALSE
-	// 		$('.header__navbar').slideUp(300);
-	// 		selectedAccordion.slideDown(300);
-	// 	}
-
- // 	}); --> menu portfolio
 
  	$('.j-serviceBtn').click(function() {
 

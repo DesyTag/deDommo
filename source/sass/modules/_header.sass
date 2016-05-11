@@ -1,12 +1,19 @@
 .wrapper
-	left: 0
+	right: 0
 	position: relative
+	transition: right .4s ease
+	padding-top: 40px
+	@media screen and (min-width: 650px)
+		padding-top: 0px
+	@media screen and (min-width: 1024px)
+		padding-top: 0px
+	
 	.menuMobile &
-		left: 70%
+		right: 40%
 		@media screen and (min-width: 650px)
-			left: 50%
+			right: 50%
 		@media screen and (min-width: 1024px)
-			left: 0%
+			right: 0%
 
 .menuMobile
 	overflow-x: hidden
@@ -14,6 +21,15 @@
 .header
 	background-color: $violet
 	width: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 9999
+
+	@media screen and (min-width: 650px)
+		position: fixed
+	@media screen and (min-width: 1024px)
+		position: relative
 a
 	text-decoration: none
 	color: #fff
@@ -21,26 +37,25 @@ a
 li
 	list-style: none
 
+.header__fixed
+
 .header__container 
 	padding: 20px 0 14px
 	position: relative
-	left: 0
-	transition: left .4s ease
-
-	.menuMobile &
-		left: 70%
+	right: 0
+	transition: right .4s ease
 
 	@media screen and (min-width: 650px)
 		padding: 20px 0 14px
-		left: 0
+		right: 0
 		.menuMobile &
-			left: 50%
+			right: 40%
 
 	@media screen and (min-width: 1024px)
 		padding: 20px 0 14px
-		left: 0
+		right: 0
 		.menuMobile &
-			left: 0%
+			right: 0%
 		
 
 
@@ -79,16 +94,18 @@ li
 
 .header__navbar
 	display: none
+	transition: right .4s ease
 
 	.menuMobile &
 		display: block
 		background-color: $dark_violet
 		position: fixed
-		width: 70%
+		width: 40%
 		height: 100%
-		left: 0%
-		top: 0%
-		transition: left .4s ease
+		right: 0%
+		top: 61px
+		transition: right .4s ease
+		padding: 40px 13px
 
 	@media screen and (min-width: 650px)
 		padding-top: 8px
@@ -103,8 +120,20 @@ li
 
 .header__item
 	display: inline-block
+
 	.menuMobile &
 		display: block
+		text-align: right
+		line-height: 30px
+		border-bottom: 1px solid $violet
+
+		&:hover
+			background-color: $azure
+			box-shadow: 0px 4px 0px $bord_azure
+			border: 7px
+
+		@media screen and (min-width: 1024px)
+			display: inline-block
 
 	@media screen and (min-width: 650px)
 		&.searchItem
@@ -116,6 +145,7 @@ li
 			float: none
 			border-left: none
 
+
 .header__menu
 	font-size: 13px
 	font-weight: 400
@@ -123,14 +153,12 @@ li
 	padding: 7px 17px
 	border-radius: 8px
 
-	&.active 
-		font-size: 14px
-		background-color: $dark_violet
-		box-shadow: 0px 4px 0px $bord_violet
-
-	&:hover
-		background-color: $azure
-		box-shadow: 0px 4px 0px $bord_azure
+	.menuMobile &
+		&.active 
+			font-size: 14px
+			box-shadow: 0px 0px 0px 
+		&:hover
+			font-size: 16px
 
 	@media screen and (min-width: 650px)
 		font-size: 11px
@@ -138,6 +166,11 @@ li
 
 		&.active 
 			font-size: 12px
+			background-color: $dark_violet
+			box-shadow: 0px 4px 0px $bord_violet
+		&:hover
+			background-color: $azure
+			box-shadow: 0px 4px 0px $bord_azure
 
 		&.searchMenu
 			padding: 4px 6px
@@ -148,19 +181,45 @@ li
 		text-transform: uppercase
 		padding: 7px 17px
 		border-radius: 8px
+
 		&.active 
 			font-size: 14px
+			background-color: $dark_violet
+			box-shadow: 0px 4px 0px $bord_violet
+
+		&:hover
+			background-color: $azure
+			box-shadow: 0px 4px 0px $bord_azure
 
 .header__link 
 	display: inline-block
 .iconNav
 	vertical-align: middle
 
-.header__subMenu
-	background-color: #20a8da
+.header__subContent
 	display: none
 	&.active
 		display: block
+		padding-top: 20px
+		background-color: $bord_azure
+		position: fixed
+		top: 10px
+		background-color: $bord_azure
+		height: 40%
+		width: 30%
+		border: 2px solid red
+
+.header__subMenu
+	// display: none
+	// &.active
+	// 	display: block
+	// 	position: fixed
+	// 	top: 10px
+	// 	background-color: $bord_azure
+	// 	height: 40%
+	// 	width: 30%
+	// 	border: 2px solid red
+
 
 
 
