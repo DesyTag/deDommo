@@ -5,39 +5,41 @@
 		{% for itemWidg in data[section].widgImg %}
 
 			<div class="widget__total">
-				<div class="widget__singleBox">
-					<div class="widget__contentImg j-widget__contentImg">
+				<div class="widget__singleBox j-widget__singleBox">
+					<div class="widget__contentImg">
 						{{itemWidg.imgWidg}}
 					</div>
 
-					<div class="widget__contentHiden j-widget__contentHiden">
-						<p class="widget__descript">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
-						</p>
-						<li class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-tumblr" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-rss" aria-hidden="true"></i>
-							</a>
-						</li>
+					<div id="hide" class="widget__contentHiden j-widget__contentHiden">
+						<div class="widget__contenuto">
+							<p class="widget__descript">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
+							</p>
+							<li class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-tumblr" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-rss" aria-hidden="true"></i>
+								</a>
+							</li>
+						</div>
 					</div>
 				</div>
-				<div class="widget__button aboutBtn j-serviceBtn">
-					<a class="button" href="#">
+				<div class="widget__button aboutBtn">
+					<a class="button j-imgBtn imgBtn" href="#hide">
 						{{itemWidg.buttonWidg}}
 					</a>
 				</div>

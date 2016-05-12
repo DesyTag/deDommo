@@ -43,17 +43,17 @@
 			<!-- </div> -->
 			<nav class="header__navbar clearfix" >
 				<li class="header__item" >
-					<a class="header__menu active" href="#index" title="menu-voice">
+					<a class="header__menu j-header__menu active" href="#index" title="menu-voice">
 						home
 					</a>
 				</li>
 				<li class="header__item" >
-					<a class="header__menu" href="#about_us" title="menu-voice">
+					<a class="header__menu j-header__menu" href="#about_us" title="menu-voice">
 						about
 					</a>
 				</li>
 				<li class="header__item" >
-					<a class="header__menu" href="#services" title="menu-voice">
+					<a class="header__menu j-header__menu" href="#services" title="menu-voice">
 						services
 					</a>
 				</li>
@@ -63,44 +63,71 @@
 							<i class="material-icons iconNav">keyboard_arrow_down</i>
 							portfolio
 						</span>
+						<span class="header__linkMob">
+							<i class="material-icons iconMob">keyboard_arrow_left</i> portfolio
+						</span>
 					</a>
 					<div class="header__subContent">
 						<ul class="header__subMenu">
 							<li class="header__voice">
 								<a class="header__subVoice" href="#">
-									portfolio column page
+									<span class="header__subLink">
+										<i class="fa fa-angle-right iconSub" aria-hidden="true">
+											portfolio column page
+										</i> 
+									</span>
+									<span class="header__subLinkMob">
+										portfolio column page
+										<i class="fa fa-angle-left iconSub" aria-hidden="true"></i>
+									</span>	
 								</a>
 							</li>
 							<li class="header__voice">
 								<a class="header__subVoice" href="#">
-									portfolio column page
+									<span class="header__subLink">
+										<i class="fa fa-angle-right iconSub" aria-hidden="true">
+											portfolio column page
+										</i>
+									</span>
+									<span class="header__subLinkMob">
+										portfolio column page
+										<i class="fa fa-angle-left iconSub" aria-hidden="true"></i>
+									</span>
 								</a>
 							</li>
 							<li class="header__voice">
 								<a class="header__subVoice" href="#">
-									portfolio column page
+									<span class="header__subLink">
+										<i class="fa fa-angle-right iconSub" aria-hidden="true">
+											portfolio column page
+										</i>
+									</span>
+									<span class="header__subLinkMob">
+										portfolio column page
+										<i class="fa fa-angle-left iconSub" aria-hidden="true"></i>
+									</span>
 								</a>
 							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="header__item" >
-					<a class="header__menu" href="#blog" title="menu-voice">
+					<a class="header__menu j-header__menu" href="#blog" title="menu-voice">
 						blog
 					</a>
 				</li>
 				<li class="header__item" >
-					<a class="header__menu" href="#features" title="menu-voice">
+					<a class="header__menu j-header__menu" href="#features" title="menu-voice">
 						features
 					</a>
 				</li>
 				<li class="header__item" >
-					<a class="header__menu" href="#contacts" title="menu-voice">
+					<a class="header__menu j-header__menu" href="#contacts" title="menu-voice">
 						contacts
 					</a>
 				</li>
 				<li class="header__item searchItem" >
-					<a class="header__menu searchMenu" href="#" title="menu-voice">
+					<a class="header__menu searchMenu j-header__menu" href="#" title="menu-voice">
 						<span class="header__link">
 							<i class="material-icons iconNav">search</i>
 						</span>
@@ -271,39 +298,41 @@
 		
 
 			<div class="widget__total">
-				<div class="widget__singleBox">
-					<div class="widget__contentImg j-widget__contentImg">
+				<div class="widget__singleBox j-widget__singleBox">
+					<div class="widget__contentImg">
 						<img class='responsiveImg' src='img/imgBox.jpg' alt='image-visual'>
 					</div>
 
-					<div class="widget__contentHiden j-widget__contentHiden">
-						<p class="widget__descript">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
-						</p>
-						<li class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-tumblr" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-rss" aria-hidden="true"></i>
-							</a>
-						</li>
+					<div id="hide" class="widget__contentHiden j-widget__contentHiden">
+						<div class="widget__contenuto">
+							<p class="widget__descript">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
+							</p>
+							<li class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-tumblr" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-rss" aria-hidden="true"></i>
+								</a>
+							</li>
+						</div>
 					</div>
 				</div>
-				<div class="widget__button aboutBtn j-serviceBtn">
-					<a class="button" href="#">
+				<div class="widget__button aboutBtn">
+					<a class="button j-imgBtn imgBtn" href="#hide">
 						john Doe
 					</a>
 				</div>
@@ -311,39 +340,41 @@
 		
 
 			<div class="widget__total">
-				<div class="widget__singleBox">
-					<div class="widget__contentImg j-widget__contentImg">
+				<div class="widget__singleBox j-widget__singleBox">
+					<div class="widget__contentImg">
 						<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>
 					</div>
 
-					<div class="widget__contentHiden j-widget__contentHiden">
-						<p class="widget__descript">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
-						</p>
-						<li class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-tumblr" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-rss" aria-hidden="true"></i>
-							</a>
-						</li>
+					<div id="hide" class="widget__contentHiden j-widget__contentHiden">
+						<div class="widget__contenuto">
+							<p class="widget__descript">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
+							</p>
+							<li class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-tumblr" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-rss" aria-hidden="true"></i>
+								</a>
+							</li>
+						</div>
 					</div>
 				</div>
-				<div class="widget__button aboutBtn j-serviceBtn">
-					<a class="button" href="#">
+				<div class="widget__button aboutBtn">
+					<a class="button j-imgBtn imgBtn" href="#hide">
 						john Doe
 					</a>
 				</div>
@@ -351,39 +382,41 @@
 		
 
 			<div class="widget__total">
-				<div class="widget__singleBox">
-					<div class="widget__contentImg j-widget__contentImg">
+				<div class="widget__singleBox j-widget__singleBox">
+					<div class="widget__contentImg">
 						<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>
 					</div>
 
-					<div class="widget__contentHiden j-widget__contentHiden">
-						<p class="widget__descript">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
-						</p>
-						<li class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-tumblr" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-rss" aria-hidden="true"></i>
-							</a>
-						</li>
+					<div id="hide" class="widget__contentHiden j-widget__contentHiden">
+						<div class="widget__contenuto">
+							<p class="widget__descript">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
+							</p>
+							<li class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-tumblr" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-rss" aria-hidden="true"></i>
+								</a>
+							</li>
+						</div>
 					</div>
 				</div>
-				<div class="widget__button aboutBtn j-serviceBtn">
-					<a class="button" href="#">
+				<div class="widget__button aboutBtn">
+					<a class="button j-imgBtn imgBtn" href="#hide">
 						john Doe
 					</a>
 				</div>
@@ -391,39 +424,41 @@
 		
 
 			<div class="widget__total">
-				<div class="widget__singleBox">
-					<div class="widget__contentImg j-widget__contentImg">
+				<div class="widget__singleBox j-widget__singleBox">
+					<div class="widget__contentImg">
 						<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>
 					</div>
 
-					<div class="widget__contentHiden j-widget__contentHiden">
-						<p class="widget__descript">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
-						</p>
-						<li class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-facebook" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-google-plus" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-tumblr" aria-hidden="true"></i>
-							</a>
-						</li>
-						<li  class="widget__itemAbout">
-							<a class="widget__itemSocial" href="#">
-								<i class="fa fa-rss" aria-hidden="true"></i>
-							</a>
-						</li>
+					<div id="hide" class="widget__contentHiden j-widget__contentHiden">
+						<div class="widget__contenuto">
+							<p class="widget__descript">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
+							</p>
+							<li class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-google-plus" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-tumblr" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li  class="widget__itemAbout">
+								<a class="widget__itemSocial" href="#">
+									<i class="fa fa-rss" aria-hidden="true"></i>
+								</a>
+							</li>
+						</div>
 					</div>
 				</div>
-				<div class="widget__button aboutBtn j-serviceBtn">
-					<a class="button" href="#">
+				<div class="widget__button aboutBtn">
+					<a class="button j-imgBtn imgBtn" href="#hide">
 						john Doe
 					</a>
 				</div>

@@ -82,13 +82,13 @@ $bord_azure: #20a8da
 	margin: 0 auto
 
 .container
-	padding: 0 18px
+	max-width: 585px
+	margin: 0 auto
 
 	@media screen and (min-width: 650px)
-		padding: 0 25px
-
+		max-width: 910px
 	@media screen and (min-width: 1024px)
-		padding: 0 150px
+		max-width: 1280px
 
 .bodyColor
 	background-color: $background
@@ -101,23 +101,25 @@ $bord_azure: #20a8da
 	max-height: 100%
 
 .button 
-	padding: 9px 20px
+	padding: 10px 0px
 	background-color: $violet
 	display: inline-block
 	font-size: 15px
 	border-radius: 7px
 	box-shadow: 0px 4px 0px $bord_violet
 	font-weight: 300
+	width: 50%
 
 	&.active
 		background-color: $azure
 		box-shadow: 0px 4px 0px $bord_azure
 
 	@media screen and (min-width: 650px)
-		padding: 10px 22px
+		padding: 12px 0px
+		width: 50%
 
 	@media screen and (min-width: 1024px)
-		padding: 12px 40px
+		padding: 12px 0px
 		width: 66%
 
 .section__end
@@ -206,7 +208,7 @@ $bord_azure: #20a8da
 	text-align: center
 	position: relative
 	display: block
-	bottom: 36px
+	bottom: 20px
 
 	&.btnTop
 		top: 20px

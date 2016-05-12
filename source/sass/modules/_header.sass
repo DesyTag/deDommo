@@ -28,6 +28,7 @@
 
 	@media screen and (min-width: 650px)
 		position: fixed
+		opacity: 0.9
 	@media screen and (min-width: 1024px)
 		position: relative
 a
@@ -46,7 +47,7 @@ li
 	transition: right .4s ease
 
 	@media screen and (min-width: 650px)
-		padding: 20px 0 14px
+		padding: 13px 0 7px
 		right: 0
 		.menuMobile &
 			right: 40%
@@ -64,7 +65,7 @@ li
 	font-weight: 900
 
 	@media screen and (min-width: 650px)
-		font-size: 30px
+		font-size: 27px
 		display: block
 		text-align: center 
 	
@@ -108,7 +109,7 @@ li
 		padding: 40px 13px
 
 	@media screen and (min-width: 650px)
-		padding-top: 8px
+		padding-top: 6px
 		float: none
 		text-align: center
 		display: block
@@ -158,7 +159,8 @@ li
 			font-size: 14px
 			box-shadow: 0px 0px 0px 
 		&:hover
-			font-size: 16px
+			@media screen and (min-width: 650px)			
+				font-size: 16px
 
 	@media screen and (min-width: 650px)
 		font-size: 11px
@@ -166,12 +168,11 @@ li
 
 		&.active 
 			font-size: 12px
+			background-color: $azure
+			box-shadow: 0px 4px 0px $bord_azure		
+		&:hover
 			background-color: $dark_violet
 			box-shadow: 0px 4px 0px $bord_violet
-		&:hover
-			background-color: $azure
-			box-shadow: 0px 4px 0px $bord_azure
-
 		&.searchMenu
 			padding: 4px 6px
 
@@ -184,30 +185,47 @@ li
 
 		&.active 
 			font-size: 14px
+			background-color: $azure
+			box-shadow: 0px 4px 0px $bord_azure
+		&:hover
 			background-color: $dark_violet
 			box-shadow: 0px 4px 0px $bord_violet
 
-		&:hover
-			background-color: $azure
-			box-shadow: 0px 4px 0px $bord_azure
-
-.header__link 
-	display: inline-block
+.header__link
+	display: none
+	@media screen and (min-width: 650px)
+		display: inline-block
+	@media screen and (min-width: 1024px)
+		display: inline-block
 .iconNav
+	vertical-align: middle
+.header__linkMob
+	display: block
+
+	@media screen and (min-width: 650px)
+		display: none
+	@media screen and (min-width: 1024px)
+		display: none
+.iconMob
 	vertical-align: middle
 
 .header__subContent
 	display: none
-	&.active
-		display: block
-		padding-top: 20px
-		background-color: $bord_azure
-		position: fixed
-		top: 10px
-		background-color: $bord_azure
-		height: 40%
-		width: 30%
-		border: 2px solid red
+	position: absolute
+	background-color: $bord_azure
+
+	.menuMobile &
+		right: 140px
+		top: 177px
+		z-index: 999999
+		width: 90%
+		margin: 0 auto
+		text-align: center
+
+	@media screen and (min-width: 650px)
+		top: 80px
+	@media screen and (min-width: 1024px)
+		top: 55px
 
 .header__subMenu
 	// display: none
@@ -220,9 +238,35 @@ li
 	// 	width: 30%
 	// 	border: 2px solid red
 
+.header__subVoice
+	line-height: 28px
+	font-size: 14px
+	background-color: $azure
+	margin: 5px 
+	padding: 3px 12px
+	font: normal normal normal 14px/1 FontAwesome
 
+	@media screen and (min-width: 650px)
 
+	@media screen and (min-width: 1024px)
+		font-size: 16px
+		margin: 8px
+		padding: 8px 23px
 
+.header__subLink
+	display: none
+	@media screen and (min-width: 650px)
+		display: inline-block
+	@media screen and (min-width: 1024px)
+		display: inline-block
+
+.header__subLinkMob
+	display: block
+
+	@media screen and (min-width: 650px)
+		display: none
+	@media screen and (min-width: 1024px)
+		display: none
 
 
 
