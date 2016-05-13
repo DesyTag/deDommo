@@ -126,19 +126,23 @@
 		"widgImg":[
 			{
 				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image-visual'>",
-				"buttonWidg": "john Doe"
+				"buttonWidg": "john Doe",
+				"buttonHref": "hide1"
 			},
 			{
 				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>",
-				"buttonWidg": "john Doe"
+				"buttonWidg": "john Doe",
+				"buttonHref": "hide2"
 			},
 			{
 				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>",
-				"buttonWidg": "john Doe"
+				"buttonWidg": "john Doe",
+				"buttonHref": "hide3"
 			},
 			{
 				"imgWidg": "<img class='responsiveImg' src='img/imgBox.jpg' alt='image'>",
-				"buttonWidg": "john Doe"
+				"buttonWidg": "john Doe",
+				"buttonHref": "hide4"
 			}
 		]
 	},
@@ -233,6 +237,11 @@
 
 	"portfolioWord": {
 		"titolo": "PORTFOLIO",
-		"breadcrumbs" : ["Home","Portfolio","WORDPRESS"]
+		"breadcrumbs" : ["Home","Portfolio","WORDPRESS"],
+		"slider": [
+		{
+
+		}
+		]
 	}
 }

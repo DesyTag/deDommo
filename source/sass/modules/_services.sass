@@ -1,3 +1,7 @@
+.boxService
+	.active &
+		background-color: $violet
+		// box-shadow: 0px 5px 0px $bord_violet
 
 .widget__serviceTxt
 	font-size: 14px
@@ -6,7 +10,7 @@
 	color: $txt_gray
 	text-align: center
 	
-	&.active
+	.active &
 		color: #fff
 
 .serviceBtn
@@ -18,7 +22,7 @@
 	&.btnTop
 		font-size: 14px
 
-	&.active
+	.active &
 		background-color: $violet
 		box-shadow: 0px 0px 0px
 
@@ -29,6 +33,7 @@
 
 .widget__singlePart
 	border-radius: 7px
-	&.active
+
+	.active &
 		background-color: $azure
 		box-shadow: 0px 5px 0px $bord_azure

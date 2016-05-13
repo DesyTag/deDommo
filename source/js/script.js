@@ -4,17 +4,18 @@ $(document).ready(function() {
 		var mob = _this.parent().find('.header__subContent');
 
 		if (mob.is(':visible') ) {
-			mob.slideUp('slow');
+			mob.slideUp('300');
 			// _this.removeClass('active')
 		}
 		else {
-			$('.header__subContent').slideUp('slow');
-			mob.slideDown('slow');
+			$('.header__subContent').slideUp('300');
+			mob.slideDown('300');
 				// _this.addClass('active')
 		}
 				 // this.addClass('.header__subMenu');
 	}); 
 	// --> per il subMenu
+
 
 	$('.j-menuToggle').on('click',function(){
 		$('body').toggleClass('menuMobile');
@@ -37,14 +38,23 @@ $(document).ready(function() {
 	// --> il menu attivo al click
 
 
- 	$('.j-imgBtn').click(function() {
+ 	$('.j-btnCover').click(function() {
  		var _this = $(this);
- 		var parent = _this.closest('.widget__total');
- 		// parent.addClass('active');
+ 		var parent = _this.closest('.j-widgetCover');
 
- 		var txt = _this.attr('href');
- 			console.log(parent)
+ 		// parent.toggleClass('active');
 
+ 		if (parent.hasClass('active') ) {
+ 			parent.removeClass('active');
+ 		}
+ 		else{
+ 			$('.j-widgetCover').removeClass('active');
+ 			parent.addClass('active');
+
+ 		} 
+ 		// --> widget
+
+ 		/*
  		if (parent.hasClass('active') ) {
  			parent.removeClass('active');	
  		}
@@ -58,7 +68,7 @@ $(document).ready(function() {
  			txt.removeClass('active');
  			parent.addClass('active');
  		}
-
+		*/
  		// parent.toggleClass('active');
 
 

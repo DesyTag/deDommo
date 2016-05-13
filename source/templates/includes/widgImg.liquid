@@ -3,14 +3,13 @@
 	<div class="widgets clearfix">
 
 		{% for itemWidg in data[section].widgImg %}
-
-			<div class="widget__total">
-				<div class="widget__singleBox j-widget__singleBox">
+			<div class="widget__total j-widgetCover">
+				<div class="widget__singleBox">
 					<div class="widget__contentImg">
 						{{itemWidg.imgWidg}}
 					</div>
 
-					<div id="hide" class="widget__contentHiden j-widget__contentHiden">
+					<div id="hide" class="widget__contentHiden">
 						<div class="widget__contenuto">
 							<p class="widget__descript">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde sapiente facilis voluptatum! Officia beatae possimus
@@ -39,7 +38,7 @@
 					</div>
 				</div>
 				<div class="widget__button aboutBtn">
-					<a class="button j-imgBtn imgBtn" href="#hide">
+					<a class="button imgBtn j-btnCover" href="#{{itemWidg.buttonHref}}">
 						{{itemWidg.buttonWidg}}
 					</a>
 				</div>

@@ -5,89 +5,57 @@
 <!-- ***************************************************************** -->
 {%assign section = "index" %}
 	{% include 'header' %}
+	{% include 'slider' %}
 
-		<div id="index" class="slider">
-			<a class="arrow__slider next" href="#">
-				<span class="arrows__slid right">
-					<i class="fa fa-angle-double-left" aria-hidden="true"></i>
-				</span>
-			</a>
-			<div class="slider__container">
-				<div class="slider__item">
-					<div class="slider__img">
-						<img class="responsiveImg" src="img/slideHome.jpg" alt="image-slider">
-					</div>
-					<div class="slider__txt">
-						<h2 class="slider__title">
-							<span class="slider__titleTxt">
-								vestibulum
-							</span>
-						</h2>
-						<p class="slider__subtitle" >
-							<span class="slider__subtitleTxt">
-								Maecenas emplate is a template for agency or freelancer or corporate Lorem ipsum aperiam!
-							</span>
-						</p>
-					</div>
-				</div>
-			</div>
-			<a class="arrow__slider previus" href="#">
-				<span class="arrows__slid left">
-					<i class="fa fa-angle-double-right" aria-hidden="true"></i>
-				</span>
-			</a>
-			<!-- 	mancano le line che indicano lo spostamento delle slider -->
-		</div>
+	<div class="container section bodyColor">
+		{% include 'sectionGrey' %}
+	</div>
 
-		<div class="container section bodyColor">
-			{% include 'sectionGrey' %}
-		</div>
+	<div class="container">
+		{% include 'widget'  %}
+	</div>
 
+	<div class="sectionVisual__grey">
 		<div class="container">
-			{% include 'widget'  %}
-		</div>
-
-		<div class="sectionVisual__grey">
-			<div class="container">
-				<div class="sectionVisual__greyBox">
-					<h2 class="sectionVisual__greyTitle">
-						WHY MODUS VERSUS?
-					</h2>
-					<p class="sectionVisual__greyTxt">
-						Capacitance cascading integer reflective interface data development high bus cache dithering transponder.
-					</p>
-				</div>
+			<div class="sectionVisual__greyBox">
+				<h2 class="sectionVisual__greyTitle">
+					WHY MODUS VERSUS?
+				</h2>
+				<p class="sectionVisual__greyTxt">
+					Capacitance cascading integer reflective interface data development high bus cache dithering transponder.
+				</p>
 			</div>
 		</div>
-		<div class="container">
-			<div class="sectionVisual">
-				<div class="sectionVisual__item left" href="#">
-					<a class="sectionVisual__img" href="#">
-						<img class="responsiveImg" src="img/visual-left.png" alt="image-visual">
-					</a>
-				</div>
+	</div>
+	<div class="container">
+		<div class="sectionVisual">
+			<div class="sectionVisual__item left" href="#">
+				<a class="sectionVisual__img" href="#">
+					<img class="responsiveImg" src="img/visual-left.png" alt="image-visual">
+				</a>
+			</div>
 
-				<div class="sectionVisual__item center" href="#">
-					<a class="sectionVisual__img" href="#">
-						<img class="responsiveImg" src="img/visual-bg.png" alt="image-visual">
-					</a>
-				</div>
+			<div class="sectionVisual__item center" href="#">
+				<a class="sectionVisual__img" href="#">
+					<img class="responsiveImg" src="img/visual-bg.png" alt="image-visual">
+				</a>
+			</div>
 
-				<div class="sectionVisual__item right" href="#">
-					<a class="sectionVisual__img" href="#">
-						<img class="responsiveImg" src="img/visual-right.png" alt="image-visual">
-					</a>
-				</div>
+			<div class="sectionVisual__item right" href="#">
+				<a class="sectionVisual__img" href="#">
+					<img class="responsiveImg" src="img/visual-right.png" alt="image-visual">
+				</a>
 			</div>
 		</div>
+	</div>
 
-		<div class="container sectList bodyColor">
-			{%include 'arrowList' %}
-			{%include 'grafic' %}
-			{%include 'cit' %}
-		</div>
+	<div class="container sectList bodyColor">
+		{%include 'arrowList' %}
+		{%include 'grafic' %}
+		{%include 'cit' %}
+	</div>
 
-		{%include 'clients' %}
+	{%include 'clients' %}
 
 	{% include 'footer' %}
 {% endblock %}

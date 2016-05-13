@@ -6,15 +6,12 @@
 	box-shadow: 0px 3px 0px $bold_gray
 	border: 2px solid $bold_gray
 
-	&.active
+	.active &
 		border: 2px solid $violet
 		box-shadow: 0px 5px 0px $bord_violet
 
 .widget__contentImg
 	display: block
-
-	&.active
-		display: none
 
 .widget__contentHiden
 	display: block
@@ -28,7 +25,7 @@
 	transition: all 400ms ease
 	background-color: $violet
 
-	&.active
+	.active &
 		display: block
 		top: 0%
 		transition: all 400ms ease
@@ -60,8 +57,22 @@
 		margin-left: 0%
 
 .imgBtn
-	&.active
+	.active &
 		background-color: $azure
 		box-shadow: 0px 4px 0px $bord_azure
 
 
+
+// .widget__total.active
+// 	.imgBtn
+// 		background-color: $azure
+// 		box-shadow: 0px 4px 0px $bord_azure
+
+// 	.widget__singleBox
+// 		border: 2px solid $violet
+// 		box-shadow: 0px 5px 0px $bord_violet
+
+// 	.widget__contentHiden
+// 		display: block
+// 		top: 0%
+// 		transition: all 400ms ease

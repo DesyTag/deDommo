@@ -1,0 +1,101 @@
+.slider
+	position: relative
+	padding-top: 0px
+	@media screen and (min-width: 650px)
+		padding-top: 80px
+	@media screen and (min-width: 1024px)
+		padding-top: 0px
+
+.slider__container
+	position: relative
+	max-height: 500px
+	overflow: hidden
+
+.slider__txt
+	position: absolute
+	top: 50%
+	left: 50%
+	width: 100%
+	transform: translate(-50%, -50%)
+	color: #fff
+	text-align: center
+
+.slider__title
+	line-height: 36px
+
+	@media screen and (min-width: 650px)
+
+	@media screen and (min-width: 1024px)
+		line-height: 60px
+
+.slider__titleTxt
+	background-color: $azure
+	font-size: 16px
+	font-weight: 600
+	text-transform: uppercase
+	display: inline-block
+	padding: 0px 6px
+	border-radius: 8px
+	opacity: 0.9
+
+	@media screen and (min-width: 650px)
+		font-size: 33px
+		font-weight: 700
+		padding: 6px 10px
+
+	@media screen and (min-width: 1024px)
+		font-size: 50px
+		font-weight: 900
+		padding: 11px 18px
+
+
+.slider__subtitle
+	background-color: #3f4646
+	width: 72%
+	margin: 0 auto
+	padding: 11px
+	border-radius: 8px
+	opacity: 0.9
+	margin-top: 10px
+
+	@media screen and (min-width: 650px)
+		padding: 10px
+	@media screen and (min-width: 1024px)
+		width: 43%
+		padding: 14px
+
+.slider__subtitleTxt
+	font-size: 13px
+	line-height: 20px
+
+	@media screen and (min-width: 650px)
+		font-size: 14px
+	@media screen and (min-width: 1024px)
+		font-size: 16px
+		line-height: 25px
+
+.arrow__slider
+	z-index: 3
+	background-color: $azure
+	position: absolute
+	font-size: 26px
+	padding: 0px 6px
+
+	&.next
+		top: 50%
+		left: 0
+		transform: translate(0%, -50%)
+	&.previus
+		top: 50%
+		right: 0
+		transform: translate(0%, -50%)
+
+	@media screen and (min-width: 650px)
+		font-size: 40px
+		padding: 5px 8px
+	@media screen and (min-width: 1024px)
+		font-size: 40px
+		padding: 5px 8px
+
+.arrows__slid
+	display: inline-block

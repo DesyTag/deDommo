@@ -25,13 +25,13 @@
 	<div class="widgets clearfix">
 		{% for item in data[section].widgBox %}
 
-		<div class="widget__total">
+		<div class="widget__total j-widgetCover">
 			<div class="widget__button btnTop j-serviceBtn">
 				<a class="button serviceBtn btnTop" href="#">
 					{{item.buttonWidgTop}}
 				</a>
 			</div>
-			<div class="widget__singlePart">
+			<div class="widget__singlePart boxService">
 				<div class="widget__contentServ">
 					<p class="widget__serviceTxt">
 						{{item.txt}}
@@ -47,7 +47,7 @@
 					</p>		
 				</div>
 			</div>
-			<div class="widget__button j-serviceBtn">
+			<div class="widget__button j-btnCover">
 				<a class="button serviceBtn" href="#">
 					{{item.buttonWidg}}
 				</a>
