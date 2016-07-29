@@ -1,0 +1,48 @@
+@mixin breakpoint($point) 
+
+	@if $point == xl 
+		@media (min-width: 1280px) 
+			@content 
+
+
+	@else if $point == l 
+		@media (min-width: 1024px)
+			@content 
+
+
+	@else if $point == m 
+		@media (min-width: 700px)
+			@content 
+
+
+=clearfix
+	*zoom: 1
+	&:before,
+	&:after
+		content: " "
+		display: table
+		clear: both
+
+@mixin font-bold
+	font-family: 'futura_bdcn_btbold'
+	font-weight: normal
+	font-style: normal
+
+@mixin font-lighter
+	font-family: 'futura_lt_btlight'
+	font-weight: normal
+	font-style: normal
+
+@mixin font-medium
+	font-family: 'futura_md_btmedium'
+	font-weight: normal
+	font-style: normal
+
+@mixin font-book
+	font-family: 'futura_bk_btbook'
+	font-weight: normal
+	font-style: normal
+
+
+
+

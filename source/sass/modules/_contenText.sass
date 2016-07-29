@@ -1,0 +1,56 @@
+.contenText__txt 
+	text-align: center
+	padding-top: 80px
+	// width: 75%
+	// margin: 0 auto
+	//padding-bottom: 80px
+	+breakpoint (m)
+		padding-top: 50px
+
+	+breakpoint (l)
+		padding-top: 80px
+
+.contenText__paragraph:after
+	content: " "
+	// border: 1px solid
+	margin-top: 30px
+	margin-bottom: 30px
+	margin: 0 auto
+	width: 95px
+	height: 2px
+	background-color: #0085ac
+	display: block
+
+	+breakpoint (m)
+		margin-top: 40px
+		margin-bottom: 40px
+
+
+	+breakpoint (l)
+		margin-top: 50px
+		margin-bottom: 50px
+
+
+
+.contenText__title 
+	color: $cerulean
+
+.contenText__paragraph
+	font-size: 17px
+	color: $dark-gray
+	line-height: 26px
+	width: 60%
+	margin: 0 auto
+	//font-weight: lighter
+	+font-lighter
+	
+	+breakpoint (m)
+		font-size: $fontSize-m
+		width: 80%
+	
+
+	+breakpoint (l)
+		font-size: 20px
+		width: 70%
+		line-height: $spaceLett
+	

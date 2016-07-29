@@ -1,0 +1,120 @@
+{% extends layout %}
+{% block content %}
+
+{%assign section = "uber" %}
+
+	{% include 'header' %}
+
+	<div class="canvas__container">
+		<img class="imgResponsive" src="img/canvas.jpg" alt="canvas">
+	</div>
+	
+	{% include 'contenText' %}
+
+	<section class="member">
+		<div class="modWrap center">
+			<div class="member__content">
+
+				<div class="member__item">
+					<div class="member__img">
+						<img src="img/gray.jpg" alt="">
+					</div>
+					<div class="member__introduction">
+						<a class="member__link" href="#">
+							<p class="member__name">Luigi De Donno</p>
+							<p class="member__role">Geschäftsinhaber</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="member__item">
+					<div class="member__img">
+						<img src="img/gray.jpg" alt="">
+					</div>
+					<div class="member__introduction">
+						<a class="member__link" href="#">
+							<p class="member__name">Fabio De Donno</p>
+							<p class="member__role">Geschäftsinhaber</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="member__item">
+					<div class="member__img">
+						<img src="img/gray.jpg" alt="">
+					</div>
+					<div class="member__introduction">
+						<a class="member__link" href="#">
+							<p class="member__name">Gabriella De Donno</p>
+							<p class="member__role">Administration</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{% include 'contenText' %}
+	{% include 'parallax' %}
+
+	<section class="date">
+		<div class="modWrap">
+			<div class="date__content">
+				<div class="date__blockTotal">
+					<ul class="date__list">
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1980 </span> Gründungsjahr Lorem Ipsum </p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1982 </span> Lorem Ipsum dolores situm grande des</p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1985 </span> Dolores grande Lorem</p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1988 </span> Gründungsjahr Lorem Ipsum </p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1990 </span> Lorem Ipsum dolores situm grande des</p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1995 </span> Gründungsjahr Lorem Ipsum </p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 2016 </span> Unsere neue Website geht Online! </p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="date__blockTotal">
+					<ul class="date__listRight">
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1980 </span> Gründungsjahr Lorem Ipsum </p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1982 </span> Lorem Ipsum dolores situm grande des</p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1985 </span> Dolores grande Lorem</p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1988 </span> Gründungsjahr Lorem Ipsum </p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1990 </span> Lorem Ipsum dolores situm grande des</p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 1995 </span> Gründungsjahr Lorem Ipsum </p>
+						</li>
+						<li class="date__item">
+							<p class="date__detail"><span class="date__year"> 2016 </span> Unsere neue Website geht Online! </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	{% include 'footer' %}
+{% endblock %}

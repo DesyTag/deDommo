@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     trace: true
                 },
                 files: {
-                    '<%= pkg.directories.css %>/style.css': '<%= pkg.directories.sass %>/style.sass'
+                    '<%= pkg.directories.css %>/style.min.css': '<%= pkg.directories.sass %>/style.sass'
                 }
             },
             dist: {

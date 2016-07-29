@@ -1,61 +1,54 @@
 {% extends layout %}
 {% block content %}
-<!-- ***************************************************************** -->
-<!-- HTML CONTENT-->
-<!-- ***************************************************************** -->
-{%assign section = "index" %}
+
+{%assign section = "home" %}
 	{% include 'header' %}
-	{% include 'slider' %}
+	{% include 'canvas' %}
+	{% include 'contenText' %}
 
-	<div class="container section bodyColor">
-		{% include 'sectionGrey' %}
-	</div>
-
-	<div class="container">
-		{% include 'widget'  %}
-	</div>
-
-	<div class="sectionVisual__grey">
-		<div class="container">
-			<div class="sectionVisual__greyBox">
-				<h2 class="sectionVisual__greyTitle">
-					WHY MODUS VERSUS?
+	<section class="previewAngebot">
+		<div class="modWrap">
+			<div class="previewAngebot__content">
+				<h2 class="previewAngebot__title">
+					Unsere Tätigkeiten
 				</h2>
-				<p class="sectionVisual__greyTxt">
-					Capacitance cascading integer reflective interface data development high bus cache dithering transponder.
-				</p>
+				<div class="previewAngebot__products">
+					<li class="previewAngebot__item">
+						<a class="previewAngebot__link" href="angebot.html">
+							<img class="imgResponsive rollOver" src="img/imgItem1.png" alt="angebot product">
+						</a>
+						<p class="previewAngebot__name">
+							Trockenbau
+						</p>	
+					</li>
+					<li class="previewAngebot__item">
+						<a class="previewAngebot__link" href="angebot.html">
+							<img class="imgResponsive rollOver" src="img/imgItem2.png" alt="angebot product">
+						</a>
+						<p class="previewAngebot__name">
+							Fassade
+						</p>	
+					</li>
+					<li class="previewAngebot__item">
+						<a class="previewAngebot__link" href="angebot.html">
+							<img class="imgResponsive rollOver" src="img/imgItem3.png" alt="angebot product">
+						</a>
+						<p class="previewAngebot__name">
+							Neubau
+						</p>	
+					</li>
+					<li class="previewAngebot__item">
+						<a class="previewAngebot__link" href="angebot.html">
+							<img class="imgResponsive rollOver" src="img/imgItem4.png" alt="angebot product">
+						</a>
+						<p class="previewAngebot__name">
+							Lorem Ipsum
+						</p>	
+					</li>
+				</div>
 			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="sectionVisual">
-			<div class="sectionVisual__item left" href="#">
-				<a class="sectionVisual__img" href="#">
-					<img class="responsiveImg" src="img/visual-left.png" alt="image-visual">
-				</a>
-			</div>
-
-			<div class="sectionVisual__item center" href="#">
-				<a class="sectionVisual__img" href="#">
-					<img class="responsiveImg" src="img/visual-bg.png" alt="image-visual">
-				</a>
-			</div>
-
-			<div class="sectionVisual__item right" href="#">
-				<a class="sectionVisual__img" href="#">
-					<img class="responsiveImg" src="img/visual-right.png" alt="image-visual">
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="container sectList bodyColor">
-		{%include 'arrowList' %}
-		{%include 'grafic' %}
-		{%include 'cit' %}
-	</div>
-
-	{%include 'clients' %}
+		</div>	
+	</section>
 
 	{% include 'footer' %}
 {% endblock %}

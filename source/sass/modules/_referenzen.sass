@@ -1,0 +1,170 @@
+.referenzen
+	padding-bottom: 170px
+
+.imgItem__container
+	width: 100%
+	margin: 0 auto
+	+clearfix
+
+.widget
+	position: relative
+	float: left
+	width: 31.5%
+	display: inline-block
+	margin-bottom: 1% 
+	margin-left: 1%
+
+	// &:nth-child(3n+1)
+	// 	margin-left: 0%
+
+	+breakpoint (m)
+		width: 48.5%
+
+		//&:nth-child(3n+1)
+		//margin-left: 0%
+
+	+breakpoint (l)
+		width: 31.5%
+
+		&:first-child
+			margin-left: 0%
+
+.widget__link
+	display: block
+
+.widget:before
+	content: ''
+	display: block
+	padding-top: 67%
+
+.widget__container
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	
+.widget__container:hover
+	transition: opacity 0.25s ease-in-out
+
+	.imgOpacity
+		background-color: rgba(0, 0, 0, 0.2)
+		opacity: 0.8
+		height: 100%
+		width: 100%
+		z-index: 8
+	.imgItem__content
+		.imgItem__item
+			background-color: rgba(22, 141, 176, 0.8)
+			z-index: 30
+
+.imgItem__content
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	margin-top: 25px
+	z-index: 10
+
+.imgItem__effect
+	vertical-align: bottom
+	
+		
+.imgItem__content
+	.imgItem__item
+		display: block
+		text-align: left
+		width: 90%
+		margin: 0 auto
+		padding: 20px
+		background-color: $cerul-opacity
+		color: $white
+		z-index: 20
+		letter-spacing: 2px
+		line-height: 30px
+		overflow: hidden
+		height: 100px
+		position: relative
+		transition: height 0.8s
+
+		&:hover
+			height: 200px
+			background-color: rgba(22, 141, 176, 0.92)
+			z-index: 30
+		
+		+breakpoint (m)
+			&:hover
+				height: 150px
+
+		+breakpoint (l)
+			&:hover
+				height: 200px
+				background-color: rgba(22, 141, 176, 0.92)
+
+
+	// vertical-align: middle
+	// display: inline-block
+
+
+.imgItem__title
+	font-size: 18px
+	display: block
+	overflow: hidden
+	width: 90%
+	+font-bold
+
+.imgItem__showTxt
+	width: 90%
+	//bottom: 10px
+	z-index: 9999
+	margin-top: 15px
+	position: absolute
+	left: 20px
+	bottom: 10px
+
+.imgItem__arrow
+	
+
+.imgItem__txt
+	font-size: 16px
+	font-weight: medium
+	display: inline-block
+
+.table
+	padding-top: 80px
+	width: 100%
+	margin: 0 auto
+
+.table__content
+	width: 50%
+	margin: 0 auto
+	display: block
+	padding-bottom: 50px
+	padding-top: 30px
+	+clearfix
+
+.table__titleTab 
+	color: $cerulean
+	font-size: 20px
+
+.table__txt
+	display: inline-block
+	color: $dark-gray
+	font-size: 20px
+	+font-lighter
+
+.table__txtRight
+	float: right
+	@extend .table__txt
+
+.table__list
+	border-bottom: 1px solid $light-gray
+	padding: 10px 0
+
+
+
+
+
+	
