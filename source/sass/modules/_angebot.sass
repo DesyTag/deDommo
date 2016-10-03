@@ -1,42 +1,67 @@
 .angebot__item
 	// padding-bottom: 75px
 .angebot__content
-	width: 100%
+	width: 90%
 	margin: 0 auto
 	padding-bottom: 30px
 	padding-top: 30px
 	margin-bottom: 40px
 	position: relative
-	
-.angebot__txt 
-	display: inline-block
-	width: 70%
-	margin: 0 auto
-	padding-left: 75px
-	vertical-align: middle
 
 	+breakpoint (m)
+		width: 100%
+	+breakpoint (l)
+		width: 100%
+	+breakpoint (xl)
+		width: 100%
+		padding-top: 28px
+		padding-bottom: 28px
+
+.angebot__txt 
+	display: block
+	width: 85%
+	margin: 0 auto
+	padding-left: 0px
+	vertical-align: middle
+	padding-bottom: 15px
+
+	+breakpoint (m)
+		display: inline-block
 		padding-left: 25px
 		width: 60%
+		padding-bottom: 0px
 			
 	+breakpoint (l)
-		padding-left: 75px
-		width: 70%
+		display: inline-block
+		padding-left: 55px
+		width: 60%
+		padding-bottom: 0px
+
+	+breakpoint (xl)
+		display: inline-block
+		padding-left: 55px
+		width: 60%
+		padding-bottom: 0px
+
+.angebot__txtWrapper
+	width: 93%
 
 .angebot__img
-	display: inline-block
-	width: 25%
+	display: block
+	width: 85%
 	margin-left: 4%
 	vertical-align: middle
 	margin: 0 auto
 
 	+breakpoint (m)
+		display: inline-block
 		width: 35%
-		margin-left: 1%
+		// margin-left: 1%
 			
 	+breakpoint (l)
+		display: inline-block
 		width: 25%
-		margin-left: 1%
+		// margin-left: 1%
 
 .angebot__title
 	color: $cerulean
@@ -61,9 +86,12 @@
 	+breakpoint (l)
 		font-size: $fontSize-l
 
+	+breakpoint (xl)
+		font-size: $fontSize-l
+
 .imgAngebot
 	display: inline-block
-	margin-top: 20px
+
 
 
 

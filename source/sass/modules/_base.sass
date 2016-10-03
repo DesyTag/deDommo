@@ -22,7 +22,7 @@ body
 
 h2
 	font-size: $fontSize-xxl
-	padding-bottom: 25px
+	padding-bottom: 30px
 	letter-spacing: 2px
 	//font-weight: bold
 	color: $cerulean
@@ -30,7 +30,7 @@ h2
 	+font-bold
 
 	+breakpoint (m)
-		font-size: $fontSize-l
+		font-size: $fontSize-xxl 
 
 	+breakpoint (l)
 		font-size: $fontSize-xxl
@@ -47,18 +47,21 @@ h2
 	//padding-top: 105px
 	
 .modWrap
-	max-width: 80%
+	max-width: 90%
 	margin: 0 auto
 	+clearfix
 
 	+breakpoint (m)
-		max-width: 90%
+		max-width: 80%
 		margin: 0 auto
 
 	+breakpoint (l)
-		max-width: 80%
+		max-width: 90%
 		margin: 0 auto
 	
+	+breakpoint (xl)
+		max-width: 80%
+		margin: 0 auto
 	
 .center
 	text-align: center	
@@ -67,6 +70,7 @@ h2
 	display: block
 	width: 100%
 	max-width: 100%
+	
 
 .linkHover
 	border-bottom: 1px solid transparent
@@ -74,6 +78,11 @@ h2
 		border-bottom: 1px solid $white
 
 
+.txtBold
+	+font-bold
+	font-family: 'futura_bdcn_btbold'
+	font-weight: 700
+	font-style: normal
 
 
 

@@ -4,7 +4,7 @@
 	color: $white
 	//font-weight: lighter
 	letter-spacing: 1px
-	margin-top: 250px
+	margin-top: 50px
 	+font-lighter
 
 	+breakpoint (m)
@@ -16,21 +16,37 @@
 
 .footer__container
 	position: relative
-	padding-top: 50px
-	padding-bottom: 75px
+	padding-top: 20px
+	padding-bottom: 25px
 	+clearfix
 
 	+breakpoint (m)
-		padding-top: 20px
+		padding-top: 30px
 		padding-bottom: 30px
 
 	+breakpoint (l)
-		padding-top: 50px
+		padding-top: 45px
+		padding-bottom: 75px
+
+	+breakpoint (xl)
+		padding-top: 45px
 		padding-bottom: 75px
 
 .footer__item
 	display: inline-block
 	vertical-align: middle
+	width: 100%
+	padding-bottom: 25px
+
+	+breakpoint (m)
+		padding-bottom: 0px
+		width: auto
+	+breakpoint (l)
+		padding-bottom: 0px
+		width: auto
+	+breakpoint (xl)
+		padding-bottom: 0px
+		width: auto
 
 // .info__adressRoad
 .info__about
@@ -39,45 +55,91 @@
 // 	padding: 5px 0
 
 .infoRelative
-	font-size: 13px
+	font-size: 11px
+	+breakpoint (m)
+		font-size: 13px
+	+breakpoint (l)
+		font-size: 13px
+	+breakpoint (xl)
+		font-size: 13px
+
+.info__adress
+	display: inline-block
+
+	+breakpoint (m)
+		display: block
+	+breakpoint (l)
+		display: block
+	+breakpoint (xl)
+		display: block
 
 .info__List
-	line-height: 30px
+	line-height: 20px
 	font-size: $fontSize-mob
 	letter-spacing: 1.5px
-	font-weight: lighter
+	+font-lighter
 
 	+breakpoint (m)
 		font-size: $fontSize-mob
+		line-height: 30px
 
 	+breakpoint (l)
 		font-size: $fontSize-m
+		line-height: 30px
 
+	+breakpoint (xl)
+		font-size: $fontSize-m
+		line-height: 30px
 
-.info__linkAdress
-	+font-bold
-	&:before
-		content: "\e947"
-		font-size: 22px
-
+.icon-location
+	display: block
+	
 .info__contacts
-	padding-top: 30px
+	padding-top: 15px
+	display: inline-block
+
+	+breakpoint (m)
+		padding-top: 20px
+		padding-bottom: 25px
+		display: block
+
+	+breakpoint (l)
+		padding-top: 30px
+		padding-bottom: 25px
+		display: block
+
+	+breakpoint (xl)
+		padding-top: 30px
+		padding-bottom: 25px
+		display: block
 
 .company
-	display: inline-block
+	display: block
 	vertical-align: middle
-	padding-left: 50%
-	float: right
-
+	padding-left: 0%
+	float: none
 	+font-lighter
+
 	+breakpoint (m)
 		padding-left: 0
+		display: inline-block
+		float: right
+
+
 	+breakpoint (l)
-		padding-left: 50%
+		padding-left: 0%
+		display: inline-block
+		float: right
 
 
 .info__company
-	font-size: $fontSize-s
+	font-size: $fontSize-mob
+	+breakpoint (m)
+		font-size: $fontSize-s
+	+breakpoint (l)
+		font-size: $fontSize-s
+	+breakpoint (xl)
+		font-size: $fontSize-s
 
 // .contact
 // 	font-size: 16px
@@ -86,14 +148,26 @@
 
 .footer__info
 	border-top: 1px solid 
-	padding: 28px 0
+	padding: 20px 0
 	text-align: center
 	font-size: 15px
 
-.info__referenceDesigner
-	border-left: 1px solid
-	padding-left: 10px
+	+breakpoint (m)
+		padding: 28px 0
+	+breakpoint (l)
+		padding: 28px 0
+	+breakpoint (xl)
+		padding: 28px 0
 
+.info__referenceDesigner
+	border-left: 0px solid 
+	padding-left: 10px
+	+breakpoint (m)
+		border-left: 1px solid
+	+breakpoint (l)
+		border-left: 1px solid
+	+breakpoint (xl)
+		border-left: 1px solid
 .scroll 
 	// display: none
 	opacity: 0
@@ -110,7 +184,7 @@
 	+breakpoint (m)
 
 	+breakpoint (l)
-	
+		
 			
 // .scroll.active 
 // 	visibility: visible

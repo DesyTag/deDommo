@@ -3,16 +3,21 @@
 	padding-top: 80px
 	// width: 75%
 	// margin: 0 auto
-	//padding-bottom: 80px
+	padding-bottom: 60px
 	+breakpoint (m)
 		padding-top: 50px
+		padding-bottom: 0px
 
 	+breakpoint (l)
 		padding-top: 80px
+		padding-bottom: 0px
+
+	+breakpoint (xl)
+		padding-top: 80px
+		padding-bottom: 0px
 
 .contenText__paragraph:after
 	content: " "
-	// border: 1px solid
 	margin-top: 30px
 	margin-bottom: 30px
 	margin: 0 auto
@@ -24,33 +29,43 @@
 	+breakpoint (m)
 		margin-top: 40px
 		margin-bottom: 40px
-
-
+	
 	+breakpoint (l)
 		margin-top: 50px
 		margin-bottom: 50px
 
+	+breakpoint (xl)
+		margin-top: 50px
+		margin-bottom: 50px
 
 
 .contenText__title 
 	color: $cerulean
 
 .contenText__paragraph
-	font-size: 17px
+	font-size: $fontSize-l
 	color: $dark-gray
 	line-height: 26px
-	width: 60%
+	width: 90%
 	margin: 0 auto
+	text-align: justify
 	//font-weight: lighter
 	+font-lighter
 	
 	+breakpoint (m)
 		font-size: $fontSize-m
 		width: 80%
+		text-align: center
 	
-
 	+breakpoint (l)
 		font-size: 20px
 		width: 70%
 		line-height: $spaceLett
+		text-align: center
+	
+	+breakpoint (xl)
+		font-size: 20px
+		width: 70%
+		line-height: $spaceLett
+		text-align: center
 	

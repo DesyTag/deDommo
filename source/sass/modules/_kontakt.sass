@@ -1,13 +1,22 @@
 .kontakt__container
 	padding-bottom: 80px
 	display: inline-block
-	width: 75%
+	width: 100%
 
 	+breakpoint (m)
 		width: 100%
 
 	+breakpoint (l)
 		width: 60%
+
+	+breakpoint (xl)
+		width: 60%
+
+.kontakt__wrapper
+	+breakpoint (m)
+		width: 80%
+		margin: 0 auto
+
 
 .kontakt__title
 	margin-bottom: 50px
@@ -39,16 +48,23 @@
 
 .footer__itemKont
 	float: right
-	width: 20%
+	width: 100%
 	margin: 0 auto
+	display: inline-block
 
 	+breakpoint (m)
-		width: 100%
+		width: 80%
+		float: none
 
 	+breakpoint (l)
 		width: 30%
 		margin: 0 auto
+		float: right
 
+	+breakpoint (xl)
+		width: 30%
+		margin: 0 auto
+		float: right
 		
 .info__aboutKont
 	color: $txt-grayDark

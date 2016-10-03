@@ -14,38 +14,41 @@
     <title> De Donno </title>
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/2403350a21/UntitledProject/style.css">
-   <!--  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link rel="stylesheet" type="text/css" href="js/plugin/slick-1.6.0 2/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/plugin/slick-1.6.0 2/slick/slick-theme.css"/>
 
 <!--   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
     
   </head>
-  <body>
+  <body class="blockCont">
 
-  <div class="wrapper">
-    
+    <div class="wrapper">
+      
 
-	<header class="header">
+	
+<header class="header  ">
 	<div class="header__fixed">
 		<div class="modWrap ">
 			<div class="header__container">
 				<div class="header__logo">
-					<img class="imgResponsive" src="img/logo1.png" alt="logo De Donno">
+					<span class="icon-Logo_DD"></span>
 				</div>
+				<div class="header__icon hamWrap">
+					<span class="icon-menu hamIcon">
+						<a href="javascript:;" class="iconHeader"></a>
+					</span>
+				</div>
+
 				<nav class="header__navbar">
 					<li class="header__menu">
 						<a class="header__voice j-header__voice " href="index.html">
 								Home
-							
  						</a>
 					</li>
 					<li class="header__menu">
-						<a class="header__voice j-header__voice" href="angebot.html ">
-							
-								Angebot <!--  --> 
-								
-							 
+						<a class="header__voice j-header__voice " href="angebot.html">
+								Angebot 
  						</a>
 					</li>
 					<li class="header__menu">
@@ -70,6 +73,7 @@
  -->						</a>
 					</li>
 				</nav>
+
 			</div>
 		</div>
 	</div>
@@ -91,7 +95,7 @@
 				</h2>
 			</div>
 			<div class="kontakt__container">
-				<form action="kontakt_submit" method="get">
+				<form class="kontakt__wrapper" action="kontakt_submit" method="get">
 					<fieldset class="">
 						<li class="form__list">
 							<label class="form__item" for="name">
@@ -131,40 +135,42 @@
 			</div>
 
 			<div class="footer__itemKont">
-				<ul class="info__adress">
-					<li class="info__List">
-						<a class="info__linkAdress" href="https://www.google.it/maps/place/Mr.+Luigi+De+Donno/@47.5084737,8.68842,17z/data=!4m12!1m6!3m5!1s0x479a99572addd727:0x22f802a4d303ca6d!2sMr.+Luigi+De+Donno!8m2!3d47.5084701!4d8.6906087!3m4!1s0x479a99572addd727:0x22f802a4d303ca6d!8m2!3d47.5084701!4d8.6906087" target="_blank">
-							<p class="info__aboutKont"> De Donno Gipsergeschäft GmbH </p>
+				<div class="kontakt__wrapper">
+					<ul class="info__adress">
+						<li class="info__List">
+							<a class="info__linkAdress" href="https://www.google.it/maps/place/Mr.+Luigi+De+Donno/@47.5084737,8.68842,17z/data=!4m12!1m6!3m5!1s0x479a99572addd727:0x22f802a4d303ca6d!2sMr.+Luigi+De+Donno!8m2!3d47.5084701!4d8.6906087!3m4!1s0x479a99572addd727:0x22f802a4d303ca6d!8m2!3d47.5084701!4d8.6906087" target="_blank">
+								<p class="info__aboutKont"> De Donno Gipsergeschäft GmbH </p>
+							</a>
+						</li>
+						<li class="info__List">
+							<p class="info__aboutKont"> Schlachthofstrasse 1</p>
+						</li>
+						<li class="info__List">
+							<p class="info__aboutKont"> CH-8406 Winterthur </p>
+						</li>
+					</ul>
+					<ul class="info__contacts">
+						<li class="info__List">
+							<p class="info__aboutKont"> T <span class="telephone">+41 52 243 00 49 </span></p>	
+						</li>
+						<li class="info__List">
+							<p class="info__aboutKont"> F <span class="telephone"> +41 52 243 00 48 </span></p>	
+						</li>
+					</ul>
+					<ul class="info__contacts">
+						<li class="info__List">
+							<a class="info__aboutKont" href="#"> info@gipser-dedonno.ch </a>
+						</li>
+						<li class="info__List">
+							<a class="info__aboutKont" href="www.gipser-dedonno.ch"> www.gipser-dedonno.ch 
+							</a>
+						</li>
+					</ul>
+					<div class="btnForm">
+						<a class="form__button" href="">
+							Lageplan
 						</a>
-					</li>
-					<li class="info__List">
-						<p class="info__aboutKont"> Schlachthofstrasse 1</p>
-					</li>
-					<li class="info__List">
-						<p class="info__aboutKont"> CH-8406 Winterthur </p>
-					</li>
-				</ul>
-				<ul class="info__contacts">
-					<li class="info__List">
-						<p class="info__aboutKont"> T <span class="telephone">+41 52 243 00 49 </span></p>	
-					</li>
-					<li class="info__List">
-						<p class="info__aboutKont"> F <span class="telephone"> +41 52 243 00 48 </span></p>	
-					</li>
-				</ul>
-				<ul class="info__contacts">
-					<li class="info__List">
-						<a class="info__aboutKont" href="#"> info@gipser-dedonno.ch </a>
-					</li>
-					<li class="info__List">
-						<a class="info__aboutKont" href="www.gipser-dedonno.ch"> www.gipser-dedonno.ch 
-						</a>
-					</li>
-				</ul>
-				<div class="btnForm">
-					<a class="form__button" href="">
-						Lageplan
-					</a>
+					</div>
 				</div>
 			</div>
 			
@@ -179,19 +185,12 @@
 	<div class="modWrap">
 		<div class="footer__container">
 			<div class="footer__item">
-				<ul class="info__adress">
-					<!-- <li class="info__icon">
-						
-					</li> -->
-					<li class="info__List">
-						<span class="info__location">
-							<a class="icon-location" href="#" target="_blank"></a>
+				<div class="info__adress">
+					<li class="txtBold info__List">
+						<!-- <span class="info__location"> -->
+							<a class="icon-location txtBold" href="https://www.google.it/maps/place/Schlachthofstrasse+1,+8406+Winterthur,+Svizzera/@47.4959476,8.6971035,17z/data=!3m1!4b1!4m5!3m4!1s0x479a9941af72527d:0x161aa147d8271fbf!8m2!3d47.495944!4d8.6992975" target="_blank"></a>
 							De Donno Gipsergeschäft GmbH 
-						</span>
-						<!-- <p class="info__about "> 
-							De Donno Gipsergeschäft GmbH 
-						</p> -->
-						
+						<!-- </span> -->
 					</li>
 					<li class="info__List">
 						<p class="info__about"> Schlachthofstrasse 1</p>
@@ -199,8 +198,9 @@
 					<li class="info__List">
 						<p class="info__about"> CH-8406 Winterthur </p>
 					</li>
-				</ul>
-				<ul class="info__contacts">
+				</div>
+				
+				<div class="info__contacts">
 					<li class="info__List">
 						<p class="info__about"> T <span class="telephone">+41 52 243 00 49 </span></p>	
 					</li>
@@ -208,14 +208,15 @@
 						<p class="info__about"> F <span class="telephone"> +41 52 243 00 48 </span></p>	
 					</li>
 					<li class="info__List">
-					<a class="info__about" href="#"> info@gipser-dedonno.ch </a>
+					<a class="info__about" href="mailto:info@gipser-dedonno.ch"> info@gipser-dedonno.ch </a>
 					</li>
-				</ul>
+				</div>
 			</div>
 
 			<div class="company">
 				<li class="info__icon">
-					<img class="imgLogo" src="img/sgs.png" alt="logo SGS">
+					<!-- <img class="imgLogo" src="img/sgs.png" alt="logo SGS"> -->
+					<span class="icon-sgs imgLogo"></span>
 				</li>
 				<li class="info__List">
 					<p class="info__company"> Société Générale de Surveillance</p>	
@@ -237,21 +238,28 @@
 </footer>
 
 <a class="scroll" href="#">
-	<img class="toTop" src="img/toTop.png" alt="back-to-top">
+	<!-- <img class="toTop" src="img/toTop.png" alt="back-to-top"> -->
+	<span class="icon-toTop toTop"></span>
 </a>
 
 
-  </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="js/script.min.js"></script>
+   <!--  <script src="https://code.jquery.com/jquery-1.12.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+   
 
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
 
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script type="text/javascript" src="js/plugin/slick-1.6.0 2/slick/slick.js"></script>
+    <script src="js/script.min.js"></script>
+    <!--<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+   
 
   </body>
 </html>

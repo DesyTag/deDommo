@@ -1,3 +1,12 @@
+.imgWrap
+	margin-top: -20%
+	
+
+.member
+	.modWrap
+		+breakpoint (m)
+			max-width: 90%
+
 .member__content
 	width: 100%
 	margin: 0 auto
@@ -13,6 +22,19 @@
 	&:first-child
 		margin-left: 0%
 
+	+breakpoint (m)
+		margin-left: 0%			
+
+	+breakpoint (l)
+		margin-left: 12%
+		&:first-child
+			margin-left: 0%
+
+	+breakpoint (xl)
+		margin-left: 12%
+		&:first-child
+			margin-left: 0%
+
 .member__introduction
 	background-color: $cerulean
 	color: $white
@@ -22,8 +44,8 @@
 	letter-spacing: 1px
 
 .member__name
-	font-size: 18px
-	letter-spacing: 2px
+	font-size: 20px
+	letter-spacing: 3px
 	+font-bold
 
 .member__role
@@ -41,9 +63,12 @@
 
 	+breakpoint (m)
 		width: 100%			
+
 	+breakpoint (l)
 		width: 80%
 
+	+breakpoint (xl)
+		width: 80%
 
 // .date__list
 // 	display: inline-block
@@ -66,7 +91,10 @@
 		font-size: $fontSize-s
 			
 	+breakpoint (l)
-		font-size: 17px
+		font-size: $fontSize-l
+
+	+breakpoint (xl)
+		font-size: $fontSize-l
 
 .date__year
 	color: $cerulean

@@ -1,23 +1,26 @@
-<header class="header">
+{{ activeMenu }}
+<header class="header {{ activeMenu }} ">
 	<div class="header__fixed">
 		<div class="modWrap ">
 			<div class="header__container">
 				<div class="header__logo">
-					<img class="imgResponsive" src="img/logo1.png" alt="logo De Donno">
+					<span class="icon-Logo_DD"></span>
 				</div>
+				<div class="header__icon hamWrap">
+					<span class="icon-menu hamIcon">
+						<a href="javascript:;" class="iconHeader"></a>
+					</span>
+				</div>
+
 				<nav class="header__navbar">
 					<li class="header__menu">
 						<a class="header__voice j-header__voice " href="index.html">
 								Home
-							
  						</a>
 					</li>
 					<li class="header__menu">
-						<a class="header__voice j-header__voice" href="angebot.html ">
-							
-								Angebot <!-- {% if sectionName == 'angebot' %} isactive {% endif %} --> 
-								{% if activeMenu == 'about'  %}isActive{% endif %}
-							{{ sectionName }} 
+						<a class="header__voice j-header__voice " href="angebot.html">
+								Angebot 
  						</a>
 					</li>
 					<li class="header__menu">
@@ -42,6 +45,7 @@
  -->						</a>
 					</li>
 				</nav>
+
 			</div>
 		</div>
 	</div>
