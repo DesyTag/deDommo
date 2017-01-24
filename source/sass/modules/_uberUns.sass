@@ -14,24 +14,36 @@
 
 .member__img
 	background-color: #dcdcdc
+
 .member__item
-	display: inline-block
-	margin-left: 12%
+	display: block
+	margin-left: 0
 	font-size: 0
+	margin-bottom: 22px
+	width: 100%
 
 	&:first-child
 		margin-left: 0%
 
 	+breakpoint (m)
-		margin-left: 0%			
+		display: block
+		margin-left: 0%	
+		margin-bottom: 22px	
+		width: 90%	
 
 	+breakpoint (l)
-		margin-left: 12%
+		display: inline-block
+		margin-bottom: 0px
+		width: 26%
+		margin-left: 6%
 		&:first-child
 			margin-left: 0%
 
 	+breakpoint (xl)
-		margin-left: 12%
+		display: inline-block
+		margin-bottom: 0px
+		width: 26%
+		margin-left: 6%
 		&:first-child
 			margin-left: 0%
 
@@ -44,15 +56,32 @@
 	letter-spacing: 1px
 
 .member__name
-	font-size: 20px
+	font-size: $fontSize-m
 	letter-spacing: 3px
 	+font-bold
 
-.member__role
-	font-size: 16px
-	//font-weight: lighter
+	+breakpoint (m)
+		font-size: $fontSize-m
 
+	+breakpoint (l)
+		font-size: $fontSize-xl
+
+	+breakpoint (xl)
+		font-size: $fontSize-xl
+
+.member__role
+	font-size: $fontSize-s
 	+font-lighter
+
+	+breakpoint (m)
+		font-size: $fontSize-s
+
+	+breakpoint (l)
+		font-size: $fontSize-l
+
+	+breakpoint (xl)
+		font-size: $fontSize-l
+
 
 .date__content 
 	// padding-bottom: 160px
@@ -103,14 +132,22 @@
 	+font-medium
 
 .date__blockTotal
-	display: inline-block
-	float: left
-	width: 50%
+	display: block
+	float: none
+	width: 100%
 
 	+breakpoint (m)
 		//width: 100%
 			
 	+breakpoint (l)
+		display: inline-block
+		float: left
+		width: 50%
+
+
+	+breakpoint (xl)
+		display: inline-block
+		float: left
 		width: 50%
 
 

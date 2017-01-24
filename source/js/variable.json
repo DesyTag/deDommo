@@ -9,7 +9,35 @@
 	},
 	"refer":{
 		"titolo": "Referenzen",
-		"txt" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo."
+		"txt" : "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+		"gallery": {	
+			"titolo": "Büro Sona, Wallisellen",
+			"images": [
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0204.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0207.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0208.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0213.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0216.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0219.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0220.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0222.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0224.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0231.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0235.jpg' alt='image-gallery'>",
+				
+				"<img class='imgView imgResponsive' src='img/refer/SAM_0246.jpg' alt='image-gallery'>"
+			]
+		}
 	},
 	"uber":{
 		"titolo": "Über Uns",

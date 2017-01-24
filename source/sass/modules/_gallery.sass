@@ -13,17 +13,22 @@
 	background-color: $cerul-opacity
 	z-index: 100
 	opacity: 0
-	visibility: hidden
+	overflow: hidden
+	transition: opacity .15s linear
+	display: none
+	-webkit-overflow-scrolling: touch
 
 	&.visible 
 		opacity: 1
-		visibility: visible
+		display: block 
+		overflow-x: hidden
+		overflow-y: auto
 
 .modGallery__wrapper
-	position: fixed
-	top: 50%
-	left: 50%
-	transform: translate(-50%,-50%)
+	// position: fixed
+	// top: 50%
+	// left: 50%
+	// transform: translate(-50%,-50%)
 	width: 80%
 	height: 100%
 	transition: all 1s ease
@@ -38,31 +43,40 @@
 		opacity: 1
 		visibility: visible
 
-.modGallery__body
-	width: 100%
+.modGallery__content
+	+clearfix
+	position: relative
+	width: 80%
 	margin: 0 auto
 
-.modGallery__View
-	position: relative
-	float: left
-	width: 31.5%
+.modGallery__body
+	padding: 88px 0px
+	+clearfix
 	display: inline-block
-	margin-bottom: 1% 
-	margin-left: 1%
+
+.modGallery__item
+	position: relative
+	// float: left
+	width: 30%
+	display: inline-block
+	margin-bottom: 2% 
+	margin-left: 2%
+	text-align: center
+	overflow: hidden
 
 	&:nth-child(3n+1)
 		margin-left: 0%
 
 	+breakpoint (m)
-		width: 48.5%
+		width: 30%
 
 		//&:nth-child(3n+1)
 		//margin-left: 0%
 	+breakpoint (l)
-		width: 31.5%
+		width: 30%
 
 	+breakpoint (xl)
-		width: 31.5%
+		width: 30%
 
 .gallery__Title 
 	color : #fff
@@ -73,18 +87,23 @@
 	// 	color: #fff
 	// 	font-size: 50px
 	// 	text-align: right
-		
-// .modGallery__content
-// 	position: absolute
-.modGallery__item
-	padding-top: 40px
 
-.modGallery__photo
+
+.modGallery__View
 	transition: all .2s ease-in-out
-	opacity: 0.9
-
-.gallery__Photo
-	&.visible
+	
+	&:hover
 		opacity: 0.8
+
+
+// .gallery__Photo
+// 	+clearfix
+// 	&.visible
+// 		opacity: 0.8
+
+	
+
+
+
 
 

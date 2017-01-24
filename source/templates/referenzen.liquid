@@ -1,7 +1,8 @@
 {% extends layout %}
 {% block content %}
 
-{%assign section = "refer" %}
+	{%assign section = "refer" %}
+
 
 	{% include 'header' %}
 	{% include 'canvas' %}
@@ -14,12 +15,12 @@
 				<div class="widget">
 					<a class="widget__link j-photoView" href="#">
 						<div class="widget__container">
-							<img class="imgOpacity imgResponsive" src="img/refer1.png" alt="referenzen">
+							<img class="imgOpacity imgResponsive" src="img/refer/SAM_0224.jpg" alt="referenzen">
 
 							<div class="imgItem__content" href="#">
 								<span class="imgItem__effect"> 
 									<div class="imgItem__item" href="#">
-										<h3 class="imgItem__title"> Theater, Winterthur </h3>
+										<h3 class="imgItem__title"> {{data[section].titolo}} </h3>
 
 										<div class="imgItem__showTxt">
 											<img class="imgItem__arrow" src="img/arrow.png">
@@ -37,12 +38,12 @@
 				<div class="widget">
 					<a class="widget__link j-photoView" href="#">
 						<div class="widget__container">
-							<img class="imgOpacity imgResponsive" src="img/refer2.png" alt="referenzen">
+							<img class="imgOpacity imgResponsive" src="img/refer/SAM_0185.jpg" alt="referenzen">
 
 							<div class="imgItem__content">
 								<span class="imgItem__effect"> 
 									<div class="imgItem__item" href="#">
-										<h3 class="imgItem__title"> Theater, Winterthur </h3>
+										<h3 class="imgItem__title"> Erb Getränkehandel, Winterthur </h3>
 										<div class="imgItem__showTxt">
 											<img class="imgItem__arrow" src="img/arrow.png">
 											<p class="imgItem__txt">
@@ -59,11 +60,11 @@
 				<div class="widget">
 					<a class="widget__link j-photoView" href="#">
 						<div class="widget__container">
-							<img class="imgOpacity imgResponsive" src="img/refer3.png" alt="referenzen">
+							<img class="imgOpacity imgResponsive" src="img/refer/SAM_0143.jpg" alt="referenzen">
 							<div class="imgItem__content">
 								<span class="imgItem__effect"> 
 									<div class="imgItem__item" href="#">
-										<h3 class="imgItem__title"> Theater, Winterthur </h3>
+										<h3 class="imgItem__title"> Kirche St. Urban, Winterthur </h3>
 										<div class="imgItem__showTxt">
 											<img class="imgItem__arrow" src="img/arrow.png">
 											<p class="imgItem__txt">
@@ -80,11 +81,11 @@
 				<div class="widget">
 					<a class="widget__link j-photoView" href="#">
 						<div class="widget__container">
-							<img class="imgOpacity imgResponsive" src="img/refer4.png" alt="referenzen">
+							<img class="imgOpacity imgResponsive" src="img/refer/DeDonno_56.jpg" alt="referenzen">
 							<div class="imgItem__content">
 								<span class="imgItem__effect"> 
 									<div class="imgItem__item" href="#">
-										<h3 class="imgItem__title"> Theater, Winterthur </h3>
+										<h3 class="imgItem__title"> Raiffeisen Bank, Elgg </h3>
 										<div class="imgItem__showTxt">
 											<img class="imgItem__arrow" src="img/arrow.png">
 											<p class="imgItem__txt">
@@ -243,8 +244,7 @@
 
 			<div class="table__content">
 				<li class="table__list">
-					<p class="table__titleTab">Neubau
-</p>
+					<p class="table__titleTab">Neubau</p>
 				</li>
 				<li class="table__list">
 					<p class="table__txt">Lorem IIpsum dolores grande</p>
@@ -286,9 +286,9 @@
 				</li>
 			</div>
 		</div>	
+		<div id="staceppa"></div>
 	</section>
 
-	
 
 	{% include 'footer' %}
 {% endblock %}

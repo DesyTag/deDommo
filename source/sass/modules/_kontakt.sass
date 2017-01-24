@@ -29,15 +29,45 @@
 	font-size: 17px
 	color: $txt-grayDark
 
-.form__list
-	padding: 5px 0px
+
+.inputMaterial
+	margin-top: 16px
+	position: relative
+	border-radius: 4px
+	background-color: #ffffff
+	border: 1px solid #dcdcdc
+
+	
+
+.inputMaterial__input
+	background-color: transparent
+	border: none
+	height: 50px
+	width: 100%
+	font-size: 16px
+	margin: 0
+	padding: 18px 16px 8px 16px
+	line-height: 1
+	box-shadow: none
+
+.inputMaterial__label
+	color: #9e9e9e
+	position: absolute
+	top: 16px
+	font-size: 16px
+	left: 16px
+	cursor: text
+	transition: all .2s ease-out
+	color: #808080
+	font-weight: normal
+	line-height: 1
 
 .Txtarea
 	padding-bottom: 150px
+	overflow: hidden
+
 
 .btnForm
-	margin-top: 20px
-.form__button
 	background-color: $cerulean
 	padding: 10px 25px
 	display: inline-block
@@ -45,6 +75,13 @@
 	font-size: 17px
 	letter-spacing: 1px
 	text-align: center
+	border-radius: 4px
+	transition: all 0.3s ease 0s
+	border-color: transparent
+	margin-top: 24px
+
+	&:hover
+		background-color: #13728e
 
 .footer__itemKont
 	float: right

@@ -1,0 +1,86 @@
+<?php
+
+
+echo main();
+
+// funzione principale che esegue il lavoro
+function main(){
+	// Mail a cui viene inviata la mail
+	$mymail="desire.oliv@gmail.com";
+
+	// parametri inseriti dall'utente nel form
+	$author="";
+	$phone="";
+	$email="";
+	$comment="";
+	getPostParams($author,$phone,$email,$comment);
+	$var = ( checkValue($author) || checkValue($phone) || checkValue($email) || checkValue($comment) );
+	if($var){
+		return "errore, i dati inseriti non sono corretti";
+	}else{
+
+		if(!checkMailTemplate($email)){
+			return "errore, la mail inserita non è valida";
+		}else{
+			if(!checkNameTemplate($author)){
+			return "errore, nome non inserito correttamente";
+			}else{
+				if(!checkNameTemplate($author)){
+				return "errore, cognome non inserito correttamente";
+				}else{
+					$message="author: ".$author."mail utente ".$email." -- telefono: ".$phone." -- email: ".$email." --commento: ".$comment; 
+					$send= sendMail($mymail, $message);
+					if($send){
+						return "mail inviata con successo";
+					}else{
+						return "errore in invio mail";
+					}
+				}		
+			}			
+		}
+
+	}
+
+}
+
+
+// funzione che manda la mail
+function sendMail($mail, $message){
+	return mail($mail, 'TEST PHP', $message);
+}
+
+
+// controllo di correttezza sua mail inserita
+function checkMailTemplate($mail){
+$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+  if(!preg_match($email_exp,$mail)) {
+    return false;
+  }else{
+  	return true;
+  }
+}
+
+//controllo di validita di nome e cognome
+function checkNameTemplate($name){
+	$string_exp = "/^[A-Za-z .'-]+$/";
+	  if(!preg_match($string_exp,$name)) {
+	 	return false;
+	  }else{
+	  	return true;
+	  }
+}
+
+
+function getPostParams(&$author,&$phone,&$email,&$comment){
+	$author = $_POST['author']; // required
+    $phone = $_POST['phone']; // required
+    $email = $_POST['email']; // required
+    $comment = $_POST['comment']; // not required
+}
+
+function checkValue($var){
+	if(! is_null($var) || $var !== ""){
+	}else{
+		return false;
+	}
+}

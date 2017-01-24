@@ -21,20 +21,42 @@ body
 // 		margin-bottom: 50px
 
 h2
-	font-size: $fontSize-xxl
-	padding-bottom: 30px
-	letter-spacing: 2px
+	font-size: $fontSize-l
+	padding-bottom: 18px
+	letter-spacing:  1.2px
 	//font-weight: bold
 	color: $cerulean
 	text-align: center
 	+font-bold
 
 	+breakpoint (m)
-		font-size: $fontSize-xxl 
+		padding-bottom: 30px
+		font-size: $fontSize-l
 
 	+breakpoint (l)
-		font-size: $fontSize-xxl
+		padding-bottom: 30px
+		font-size: $fontSize-xl
 
+	+breakpoint (xl)
+		font-size: $fontSize-xl
+
+
+p 
+	
+	font-size: $fontSize-s
+
+	+breakpoint (m)
+		font-size: $fontSize-m
+
+	+breakpoint (l)
+		font-size: $fontSize-l
+
+	+breakpoint (xl)
+		font-size: $fontSize-m
+
+a 
+	text-decoration: none
+	
 .bgBase
 	background-color: $cerulean
 
@@ -52,7 +74,7 @@ h2
 	+clearfix
 
 	+breakpoint (m)
-		max-width: 80%
+		max-width: 95%
 		margin: 0 auto
 
 	+breakpoint (l)
@@ -69,6 +91,7 @@ h2
 .imgResponsive 
 	display: block
 	width: 100%
+	height: 100%
 	max-width: 100%
 	
 

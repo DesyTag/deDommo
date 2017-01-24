@@ -1,9 +1,9 @@
 .contenText__txt 
 	text-align: center
-	padding-top: 80px
+	padding-top: 46px
 	// width: 75%
 	// margin: 0 auto
-	padding-bottom: 60px
+	padding-bottom: 22px
 	+breakpoint (m)
 		padding-top: 50px
 		padding-bottom: 0px
@@ -18,9 +18,9 @@
 
 .contenText__paragraph:after
 	content: " "
-	margin-top: 30px
-	margin-bottom: 30px
-	margin: 0 auto
+	// margin-top: 30px
+	// margin-bottom: 30px
+	margin: 30px auto
 	width: 95px
 	height: 2px
 	background-color: #0085ac
@@ -41,12 +41,24 @@
 
 .contenText__title 
 	color: $cerulean
+	width: 86%
+	margin: 0 auto
+
+	+breakpoint (m)
+		width: inherit
+
+	+breakpoint (l)
+		width: inherit
+
+	+breakpoint (xl)
+		width: inherit
+
 
 .contenText__paragraph
-	font-size: $fontSize-l
+	font-size: $fontSize-m
 	color: $dark-gray
 	line-height: 26px
-	width: 90%
+	//width: 90%
 	margin: 0 auto
 	text-align: justify
 	//font-weight: lighter

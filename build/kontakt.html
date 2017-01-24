@@ -31,16 +31,21 @@
 	<div class="header__fixed">
 		<div class="modWrap ">
 			<div class="header__container">
-				<div class="header__logo">
+				<a class="header__logo j-header__voice" href="index.html">
 					<span class="icon-Logo_DD"></span>
-				</div>
-				<div class="header__icon hamWrap">
-					<span class="icon-menu hamIcon">
-						<a href="javascript:;" class="iconHeader"></a>
+				</a>
+				<!-- <div class="header__icon hamWrap">
+					<a href="javascript:;" class="iconHeader">
+						<span class="icon-menu hamIcon"></span>
+					</a>
+				</div> --> 
+				<div class="header__icon-menu">
+					<span class="hamIcon j-iconMenu">
+						<a href="javascript:;" class="header__hamIcon icon-hamIcon"></a>
 					</span>
 				</div>
 
-				<nav class="header__navbar">
+				<nav class="header__navbar j-voiceMenu">
 					<li class="header__menu">
 						<a class="header__voice j-header__voice " href="index.html">
 								Home
@@ -95,42 +100,39 @@
 				</h2>
 			</div>
 			<div class="kontakt__container">
-				<form class="kontakt__wrapper" action="kontakt_submit" method="get">
+				<!-- <form class="kontakt__wrapper" action="kontakt_submit" method="get"> -->
+				<form action="http://www.gipser-dedonno.ch/php_newmail.phtml" method="post" id="commentform" class="comment-form" novalidate="">
+																			
 					<fieldset class="">
-						<li class="form__list">
-							<label class="form__item" for="name">
-							<input class="form__voice" type="text" name="name" placeholder="Name" required>
-							</label>
-						</li>
-						<li class="form__list">
-							<label class="form__item" for="">
-							<input class="form__voice" type="text" name="name" placeholder="Firma">
-							</label>
-						</li>
-						<li class="form__list">
-							<label class="form__item" for="phone">
-							<input class="form__voice" type="text" name="name" min="1" max="15" placeholder="Telefon">
-							</label>
-						</li>
-						<li class="form__list">
-							<label class="form__item" for="email">
-							<input class="form__voice" type="text" name="name" placeholder="E-Mail" required>
-							</label>
-						</li>
-						<li class="form__list">
-							<label class="form__item" for="name">
-							<input class="form__voice" type="text" name="name" placeholder="Betreff">
-							</label>
-						</li>
-						<li class="form__list">
-							<label class="form__item" for="note">
-							<textarea class="form__voice Txtarea" name="note" type="text" placeholder="Nachircht"></textarea>
-							</label>
-						</li>
+						<div class="inputMaterial">
+							<input id="author" class="form__voice inputMaterial__input inputMaterial__input" type="text" name="author" placeholder="Name" required>
+							<label class="form__item inputMaterial__label" for="name"></label>
+						</div>
+						<div class="inputMaterial">
+							<input class="form__voice inputMaterial__input" type="text" name="name" placeholder="Firma">
+							<label class="form__item inputMaterial__label" for=""></label>
+						</div>
+						<div class="inputMaterial">
+							<input id="phone" class="form__voice inputMaterial__input" type="text" name="name" min="1" max="15" placeholder="Telefon">
+							<label class="form__item inputMaterial__label" for="phone"></label>
+						</div>
+						<div class="inputMaterial">
+							<input id="email" class="form__voice inputMaterial__input" type="email" value="test@form.it" name="email" placeholder="E-Mail" aria-required="true" required>
+							<label class="form__item inputMaterial__label" for="email"></label>
+						</div>
+						<div class="inputMaterial">
+							<input class="form__voice inputMaterial__input" type="text" name="name" placeholder="Betreff">
+							<label class="form__item inputMaterial__label" for="name"></label>
+						</div>
+						<div class="inputMaterial">
+							<textarea id="comment" class="form__voice inputMaterial__input Txtarea" name="comment" type="text" placeholder="Nachircht"></textarea>
+							<label class="form__item inputMaterial__label" for="note"></label>
+						</div>
 					</fieldset>
-					<fieldset class="btnForm">
-						<a class="form__button" href="#"> Absenden </a>
-					</fieldset>
+					<button class="btnForm" type="button" id="submit">
+						<span> Absenden </span>
+					</button>
+					<!-- <a class="form__button" href="#"> Absenden </a> -->
 				</form>
 			</div>
 
@@ -166,17 +168,13 @@
 							</a>
 						</li>
 					</ul>
-					<div class="btnForm">
-						<a class="form__button" href="">
-							Lageplan
-						</a>
-					</div>
+					<button class="btnForm" type="button">
+						<span> Lageplan </span>
+					</button> 
+						
 				</div>
 			</div>
 			
-			
-
-
 		</div>	
 	</section>	
 
@@ -237,9 +235,8 @@
 	</div>	
 </footer>
 
-<a class="scroll" href="#">
-	<!-- <img class="toTop" src="img/toTop.png" alt="back-to-top"> -->
-	<span class="icon-toTop toTop"></span>
+<a class="scroll" href="#">	
+	<img class="toTop" src="img/toTop.png"/>
 </a>
 
 

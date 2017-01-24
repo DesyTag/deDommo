@@ -1,61 +1,81 @@
 .angebot__item
 	// padding-bottom: 75px
 .angebot__content
-	width: 90%
+	+clearfix
+	width: 100%
 	margin: 0 auto
-	padding-bottom: 30px
-	padding-top: 30px
+	// padding-bottom: 30px
+	// padding-top: 30px
 	margin-bottom: 40px
 	position: relative
+	padding: 0px 0px
 
 	+breakpoint (m)
 		width: 100%
+		padding: 0px 0px
+
 	+breakpoint (l)
 		width: 100%
+		padding: 28px 55px
+
 	+breakpoint (xl)
 		width: 100%
-		padding-top: 28px
-		padding-bottom: 28px
+		// padding-top: 28px
+		// padding-bottom: 28px
+		padding: 28px 55px
 
 .angebot__txt 
 	display: block
-	width: 85%
+	width: 90%
 	margin: 0 auto
-	padding-left: 0px
+	//padding-left: 0px
 	vertical-align: middle
-	padding-bottom: 15px
+	padding-bottom: 22px
+	padding-top: 22px
 
 	+breakpoint (m)
 		display: inline-block
-		padding-left: 25px
+		//padding-left: 25px
 		width: 60%
 		padding-bottom: 0px
+		padding-top: 22px
 			
 	+breakpoint (l)
 		display: inline-block
-		padding-left: 55px
-		width: 60%
+		//padding-left: 55px
+		width: 70%
 		padding-bottom: 0px
+		padding-top: 0px
 
 	+breakpoint (xl)
 		display: inline-block
-		padding-left: 55px
-		width: 60%
+		//padding-left: 55px
+		width: 70%
 		padding-bottom: 0px
+		padding-top: 0px
 
 .angebot__txtWrapper
-	width: 93%
+	width: 100%
+
+	+breakpoint (m)
+		width: 93%
+			
+	+breakpoint (l)
+		width: 93%
+	+breakpoint (xl)
+		width: 93%
 
 .angebot__img
 	display: block
-	width: 85%
+	width: 100%
 	margin-left: 4%
 	vertical-align: middle
 	margin: 0 auto
+	float: right
 
 	+breakpoint (m)
 		display: inline-block
-		width: 35%
+		width: 25%
 		// margin-left: 1%
 			
 	+breakpoint (l)
@@ -63,21 +83,30 @@
 		width: 25%
 		// margin-left: 1%
 
+	+breakpoint (xl)
+		display: inline-block
+		width: 25%
+
 .angebot__title
 	color: $cerulean
-	font-size: 22px
+	font-size: $fontSize-l
 	padding-bottom: 10px
 	text-align: left
 	//font-weight: bold
 	+font-bold
 
 	+breakpoint (m)
-			
+		font-size: $fontSize-l	
 	+breakpoint (l)
+		font-size: $fontSize-xl
+
+	+breakpoint (xl)
+		font-size: $fontSize-xl
+
 
 .angebot__paragraph
 	color: $txt-grayDark
-	font-size: $fontSize-m
+	font-size: $fontSize-s
 	line-height: 25px
 
 	+breakpoint (m)

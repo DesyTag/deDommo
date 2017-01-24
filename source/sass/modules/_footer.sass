@@ -8,10 +8,20 @@
 	+font-lighter
 
 	+breakpoint (m)
-		margin-top: 150px
+		margin-top: 64px //150px
 
 	+breakpoint (l)
 		margin-top: 250px
+
+	p 
+		font-size: $fontSize-base
+
+		+breakpoint (m)
+			font-size: $fontSize-s
+
+		+breakpoint (l)
+
+		+breakpoint (xl)
 
 .footer__container
 	position: relative
@@ -20,16 +30,16 @@
 	+clearfix
 
 	+breakpoint (m)
-		padding-top: 30px
-		padding-bottom: 30px
+		padding-top: 28px
+		padding-bottom: 28px
 
 	+breakpoint (l)
-		padding-top: 45px
-		padding-bottom: 75px
+		padding-top: 36px
+		padding-bottom: 36px
 
 	+breakpoint (xl)
-		padding-top: 45px
-		padding-bottom: 75px
+		padding-top: 36px
+		padding-bottom: 36px
 
 .footer__item
 	display: inline-block
@@ -51,7 +61,14 @@
 .info__about
 	color: #fff
 	letter-spacing: 2px
+
 // 	padding: 5px 0
+
+	+breakpoint (m)
+
+	+breakpoint (l)
+
+	+breakpoint (xl)
 
 .infoRelative
 	font-size: 11px
@@ -79,7 +96,7 @@
 	+font-lighter
 
 	+breakpoint (m)
-		font-size: $fontSize-mob
+		font-size: $fontSize-l
 		line-height: 30px
 
 	+breakpoint (l)
@@ -94,22 +111,22 @@
 	display: block
 	
 .info__contacts
-	padding-top: 15px
-	display: inline-block
+	padding-top: 24px
+	display: block
 
 	+breakpoint (m)
 		padding-top: 20px
-		padding-bottom: 25px
+		//padding-bottom: 25px
 		display: block
 
 	+breakpoint (l)
 		padding-top: 30px
-		padding-bottom: 25px
+		//padding-bottom: 25px
 		display: block
 
 	+breakpoint (xl)
 		padding-top: 30px
-		padding-bottom: 25px
+		//padding-bottom: 25px
 		display: block
 
 .company
@@ -152,11 +169,11 @@
 	font-size: 15px
 
 	+breakpoint (m)
-		padding: 28px 0
+		padding: 22px 0
 	+breakpoint (l)
-		padding: 28px 0
+		padding: 22px 0
 	+breakpoint (xl)
-		padding: 28px 0
+		padding: 22px 0
 
 .info__referenceDesigner
 	border-left: 0px solid 
