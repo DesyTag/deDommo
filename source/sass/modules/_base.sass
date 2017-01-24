@@ -4,6 +4,7 @@
 
 body
 	font-family: $baseFont
+
 // hr
 // 	border: 1px solid
 // 	margin-top: 50px
@@ -35,28 +36,36 @@ h2
 
 	+breakpoint (l)
 		padding-bottom: 30px
-		font-size: $fontSize-xl
+		font-size: $fontSize-title-xl
 
 	+breakpoint (xl)
-		font-size: $fontSize-xl
+		font-size: $fontSize-title-xl
 
 
 p 
 	
 	font-size: $fontSize-s
+	line-height: $space-s
 
 	+breakpoint (m)
 		font-size: $fontSize-m
+		line-height: $space-s
 
 	+breakpoint (l)
 		font-size: $fontSize-l
+		line-height: $space-l
 
 	+breakpoint (xl)
 		font-size: $fontSize-m
+		line-height: $space-l
 
 a 
 	text-decoration: none
-	
+
+.blockCont
+	&.active
+		overflow: hidden
+
 .bgBase
 	background-color: $cerulean
 

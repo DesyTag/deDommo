@@ -1,16 +1,19 @@
 .kontakt__container
-	padding-bottom: 80px
+	padding-bottom: 40px
 	display: inline-block
 	width: 100%
 
 	+breakpoint (m)
 		width: 100%
+		padding-bottom: 40px
 
 	+breakpoint (l)
 		width: 60%
+		padding-bottom: 80px
 
 	+breakpoint (xl)
 		width: 60%
+		padding-bottom: 80px
 
 .kontakt__wrapper
 	+breakpoint (m)
@@ -19,8 +22,19 @@
 
 
 .kontakt__title
-	margin-bottom: 50px
-	margin-top: 80px
+	margin-bottom: 0px
+	margin-top: 40px
+
+	+breakpoint (m)
+		margin-bottom: 30px
+		margin-top: 60px
+
+	+breakpoint (l)
+		margin-bottom: 50px
+		margin-top: 80px
+	+breakpoint (xl)
+		margin-bottom: 50px
+		margin-top: 80px
 
 .form__voice
 	width: 100%
@@ -46,7 +60,7 @@
 	width: 100%
 	font-size: 16px
 	margin: 0
-	padding: 18px 16px 8px 16px
+	//padding: 18px 16px 8px 16px
 	line-height: 1
 	box-shadow: none
 
@@ -63,25 +77,38 @@
 	line-height: 1
 
 .Txtarea
-	padding-bottom: 150px
+	//padding-bottom: 150px
+	min-height: 70px
+	height: 70%
+	//padding: 20px 16px 8px 16px
 	overflow: hidden
 
 
 .btnForm
 	background-color: $cerulean
-	padding: 10px 25px
+	//padding: 10px 25px
 	display: inline-block
 	color: $white
-	font-size: 17px
+	font-size: $fontSize-s
 	letter-spacing: 1px
 	text-align: center
 	border-radius: 4px
 	transition: all 0.3s ease 0s
 	border-color: transparent
 	margin-top: 24px
+	height: 40px
+	min-width: 100px
 
 	&:hover
 		background-color: #13728e
+
+	+breakpoint (m)
+		font-size: $fontSize-s
+	+breakpoint (l)
+		font-size: $fontSize-l
+	+breakpoint (xl)
+		font-size: $fontSize-l
+
 
 .footer__itemKont
 	float: right
@@ -106,7 +133,7 @@
 .info__aboutKont
 	color: $txt-grayDark
 	//font-weight: 200
-	font-size: 17px
+	font-size: $fontSize-s
 	+font-lighter
 
 
